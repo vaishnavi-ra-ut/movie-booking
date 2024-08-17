@@ -1,0 +1,27 @@
+{
+  "name": "moviebooking",
+  "version": "1.0.0",
+  "description": "A online movie tickets booking website",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaishnavi-ra-ut/movie-booking.git"
+  },
+  "author": "Topa Gang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaishnavi-ra-ut/movie-booking/issues"
+  },
+  "homepage": "https://github.com/vaishnavi-ra-ut/movie-booking#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
