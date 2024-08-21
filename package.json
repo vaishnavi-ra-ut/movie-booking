@@ -2,7 +2,6 @@
   "name": "moviebooking",
   "version": "1.0.0",
   "description": "A online movie tickets booking website",
-  "main": "index.html",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html"
@@ -18,10 +17,35 @@
   },
   "homepage": "https://github.com/vaishnavi-ra-ut/movie-booking#readme",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "assert": "^2.1.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "constants-browserify": "^1.0.0",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "parcel": "^2.12.0",
+    "path-browserify": "^1.0.1",
+    "postcss": "^8.4.41",
+    "process": "^0.11.10",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "string_decoder": "^1.3.0",
+    "tailwindcss": "^3.4.10",
+    "url": "^0.11.4",
+    "util": "^0.12.5",
+    "vm-browserify": "^1.1.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1"
   }
 }
