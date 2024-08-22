@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"gpvlO":[function(require,module,exports) {
+})({"hPIHA":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -34424,11 +34424,7 @@ var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
 var _profile = require("./Profile");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-<<<<<<< HEAD
-        className: "header h-32",
-=======
-        className: "flex justify-between items-center p-4 -mt-[284px]",
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
+        className: "flex justify-between items-center p-4  h-[70px] -mt-7 mb-4",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -34437,15 +34433,6 @@ const Header = ()=>{
                     alt: "Logo"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
-<<<<<<< HEAD
-                    lineNumber: 5,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Header.js",
-                lineNumber: 4,
-                columnNumber: 13
-=======
                     lineNumber: 9,
                     columnNumber: 9
                 }, undefined)
@@ -34453,7 +34440,6 @@ const Header = ()=>{
                 fileName: "src/components/Header.js",
                 lineNumber: 8,
                 columnNumber: 7
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex items-center",
@@ -34467,13 +34453,8 @@ const Header = ()=>{
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-<<<<<<< HEAD
-                        lineNumber: 8,
-                        columnNumber: 17
-=======
                         lineNumber: 12,
                         columnNumber: 9
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "home opacity-70 ml-4",
@@ -34497,10 +34478,6 @@ const Header = ()=>{
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-<<<<<<< HEAD
-                        lineNumber: 10,
-                        columnNumber: 17
-=======
                         lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
@@ -34515,29 +34492,18 @@ const Header = ()=>{
                         fileName: "src/components/Header.js",
                         lineNumber: 21,
                         columnNumber: 9
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-<<<<<<< HEAD
-                lineNumber: 7,
-                columnNumber: 13
-=======
                 lineNumber: 11,
                 columnNumber: 7
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-<<<<<<< HEAD
-        lineNumber: 3,
-        columnNumber: 9
-=======
         lineNumber: 7,
         columnNumber: 5
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
     }, undefined);
 };
 _c = Header;
@@ -34550,7 +34516,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Searchbar":"kZ65z","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/logo.png":"b04ZD","./Profile":"h0rtF"}],"kZ65z":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Searchbar":"kZ65z","../assets/logo.png":"b04ZD","./Profile":"h0rtF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZ65z":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34957,7 +34923,6 @@ const slides = [
 ];
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-<<<<<<< HEAD
         className: "body w-[100vw] h-[80vh]",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "h-[80vh]",
@@ -34980,12 +34945,6 @@ const Body = ()=>{
         }, void 0, false, {
             fileName: "src/components/Body.js",
             lineNumber: 13,
-=======
-        className: "body",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-            fileName: "src/components/Body.js",
-            lineNumber: 5,
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
@@ -35106,45 +35065,10 @@ $RefreshReg$(_c, "Carousel");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"78kaM":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"78kaM":[function(require,module,exports) {
 module.exports = require("2f279e65206290d7").getBundleURL("1G2bZ") + "img1.f05a4ee2.jpg" + "?" + Date.now();
 
-},{"2f279e65206290d7":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"4YYWd":[function(require,module,exports) {
+},{"2f279e65206290d7":"lgJ39"}],"4YYWd":[function(require,module,exports) {
 module.exports = require("ce83a5b0fbaf969e").getBundleURL("1G2bZ") + "img2.430268e0.jpg" + "?" + Date.now();
 
 },{"ce83a5b0fbaf969e":"lgJ39"}],"8y4LZ":[function(require,module,exports) {
@@ -35153,6 +35077,6 @@ module.exports = require("abafbe1b8b314abd").getBundleURL("1G2bZ") + "img3.f9ded
 },{"abafbe1b8b314abd":"lgJ39"}],"7drGN":[function(require,module,exports) {
 module.exports = require("dbd359044fd18a7f").getBundleURL("1G2bZ") + "img4.c2194ce0.jpg" + "?" + Date.now();
 
-},{"dbd359044fd18a7f":"lgJ39"}]},["gpvlO","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
+},{"dbd359044fd18a7f":"lgJ39"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
 
 //# sourceMappingURL=index.5baa4167.js.map
