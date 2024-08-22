@@ -4,7 +4,7 @@ import { ProfileMenu } from "./Profile";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center p-4 -mt-[284px]">
+    <div className="flex justify-between items-center p-4 h-[70px] -mt-7 mb-4">
       <div>
         <img src={logo} className="logo w-[180px] h-[48px] mt-1 ml-2" alt="Logo" />
       </div>
