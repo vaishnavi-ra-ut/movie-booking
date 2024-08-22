@@ -34923,7 +34923,7 @@ const slides = [
 ];
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body w-[100vw] h-[80vh]",
+        className: "body w-[100vw] h-[80vh] -m-2",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "h-[80vh]",
             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
@@ -35004,8 +35004,29 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: prevSlide,
-                        className: "p-2 rounded-full shadow bg-white/80 opacity-80 text-gray-900 hover:bg-white",
-                        children: "("
+                        className: "p-2 rounded-full shadow bg-white/80 opacity-70 text-gray-900 hover:bg-white",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            width: "24",
+                            height: "24",
+                            viewBox: "0 0 24 24",
+                            fill: "none",
+                            stroke: "currentColor",
+                            "stroke-width": "2",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("polyline", {
+                                points: "15 18 9 12 15 6"
+                            }, void 0, false, {
+                                fileName: "src/components/Carousel.js",
+                                lineNumber: 17,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Carousel.js",
+                            lineNumber: 16,
+                            columnNumber: 133
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Carousel.js",
                         lineNumber: 16,
@@ -35013,11 +35034,32 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: nextSlide,
-                        className: "p-2 rounded-full shadow bg-white/80 opacity-80 text-gray-800 hover:bg-white",
-                        children: "."
+                        className: "p-2 rounded-full shadow bg-white/80 opacity-70 text-gray-900 hover:bg-white",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            width: "24",
+                            height: "24",
+                            viewBox: "0 0 24 24",
+                            fill: "none",
+                            stroke: "currentColor",
+                            "stroke-width": "2",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("polyline", {
+                                points: "9 18 15 12 9 6"
+                            }, void 0, false, {
+                                fileName: "src/components/Carousel.js",
+                                lineNumber: 21,
+                                columnNumber: 21
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Carousel.js",
+                            lineNumber: 20,
+                            columnNumber: 133
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Carousel.js",
-                        lineNumber: 17,
+                        lineNumber: 20,
                         columnNumber: 17
                     }, undefined)
                 ]
@@ -35034,17 +35076,17 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                             className: `transition-all w-3 h-3 bg-white rounded-full ${currSlide === i ? "p-2" : "bg-opacity-50"}`
                         }, void 0, false, {
                             fileName: "src/components/Carousel.js",
-                            lineNumber: 22,
+                            lineNumber: 28,
                             columnNumber: 25
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/components/Carousel.js",
-                    lineNumber: 20,
+                    lineNumber: 26,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 19,
+                lineNumber: 25,
                 columnNumber: 13
             }, undefined)
         ]

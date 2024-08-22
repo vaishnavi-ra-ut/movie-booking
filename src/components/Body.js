@@ -9,7 +9,7 @@ const slides = [
 const Body = () => {
 
     return (
-        <div className="body w-[100vw] h-[80vh]">
+        <div className="body w-[100vw] h-[80vh] -m-2">
             <div className="h-[80vh]">
                 <Carousel autoSlide={true} autoSlideInterval={3000}>
                     {slides.map((slide) => <img className="h-[75vh] w-[96%] mx-[2%]"
