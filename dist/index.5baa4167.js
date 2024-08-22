@@ -34417,54 +34417,93 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _searchbar = require("./Searchbar");
+var _searchbarDefault = parcelHelpers.interopDefault(_searchbar);
+var _logoPng = require("../assets/logo.png");
+var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
+var _profile = require("./Profile");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "flex justify-between items-center p-4 -mt-[284px]",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "logo",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Logo"
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: (0, _logoPngDefault.default),
+                    className: "logo w-[180px] h-[48px] mt-1 ml-2",
+                    alt: "Logo"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 5,
-                    columnNumber: 13
+                    lineNumber: 9,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 4,
-                columnNumber: 10
+                lineNumber: 8,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "contents",
+                className: "flex items-center",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "search",
-                        src: "data:image/png;base64,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"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-full max-w-sm -mr-5",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchbarDefault.default), {}, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 13,
+                            columnNumber: 11
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 8,
-                        columnNumber: 13
+                        lineNumber: 12,
+                        columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "home",
-                        src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAACUCAMAAADIzWmnAAAAY1BMVEUAAAD///9tbW34+Pjz8/NISEizs7ODg4P7+/uqqqrm5uZoaGi/v798fHzv7+/s7OzJyclPT09ycnITExPR0dGkpKRiYmJdXV2MjIzd3d1XV1cgICA+Pj6Xl5cNDQ0mJiYyMjLrlDo/AAAFKUlEQVR4nO2caXuqMBCFjbigiIrggtrq//+VV2stepKcLGztfXI+thReZ5jJZCZ1MGhGEyFr0tC9m1E+UyAKMcv7Bqt0WigRhVic+kZ76lpoEIUorn3DPUQQfwvkeUUQhVid+wYcDLKSIgpRZn0jjucGRCHm434RMyPhXb1acjOyYhxtekS0IryrN8ipNaIQ034QDw6IIj70QPi5dUG8afvZOaO6imCadY2oqyKYFp0SagsdA2SXZdBai1GmKVl51p0RnvRL9FfpTV7VsiNLnvWI32Gh2jg8Ibspg/Tr30/kkrw06oDwuNQ+fltd9aGHXB5bR9RXtG9Jmlhy1TLkLrax4l3EkvGuTcQ00j5YWkXYO5m2hzjUW3Emr8YEMh62hUgKHeVazGq3lsqgLXG0uqYhloy2yr+oi+hoxbs+9C8HxlgTImsHKbqYuxtvWZFCR+Poh0gKarhWO+kLHVPpOiXuXjdYYeSkoyMhJmDWA4EsGkO8OCCOi6iEte6gzweiuDSDyNoliJh9FUWw1rFteDONlitDBL8eH9eOYBlh7p5f6yPuHay4/6nboC+Rkp7LfF8XcagvF6UEl72QJO+/2pB3cgnXuiphiODo7NXi6O5pa5CsXYJWPAIFuHtHIOtUGKkLIhboEViSvZPCu6Bk4YiIe3kPEYElhwTSt2XFmk5SuCg/DuTJHbOkVxlEEdV5ETWCYKDudof8ZB0dtKLeQODuPUkTYuHY/MtJuSiHi948MViSpVsxcRovXlysqAiXSpgnKeTCocK4sLkQVqZ7lvhuAsiMvZOlNeSZDQAxXKgV73KyZGHZsqKjK3R0Yp7QxJCg6aeyq9UoIjoaF0C1IHBIW8sOMqOImBdNjn4I3c0qFTE3Tu727FloxcTKindBnhzTz2YoKOkAUIpoZo53ReDuHc1XdHLHCh3ZivaI8nNZeU/LIIqIM4E9qYpUAktyd2sh6QAQw8WYF1FYYPAbaGo1Ol1DRw+tw6USGOdM3a1qf2iOEX1LcrQHolRg0DSnOsBEp2trcDQNS70wcDRl57fQdbTQkayYOIZLJYBk/QUsg3LSF7shgtV3LknnXbjicHe/Pjh3sjnbOxkVYeDQ40Hz3O467L+55kUUBA5393O8mNMAKNDRfuFSCfMkP8W0+np8RtMIhsumphXvgsAho+abosy06haYdOq8iz+PBUvyd22ZDLbMMJgXa4VLJcyTFDK+bbzPE+2DMVz88yIKUpDe3aPJI2qOms10AW3/GnlRerSluydVb/28VgQOhgsZuroLN2Kq0UW0ft8lJtJKg44mo2svgSXlPf1aap3mu/eLcL5Dt8U+wsCBY73lTtlZSV+uaiMvorDYfnl8oS3ET4fnIoLhYrHVdxd2en8suTrQId30ixLzIm0c1oAEaz3GkivjWcnTx1wKF3JGoZ6kMwuFmH/YDDrH6fX9B604+iHMk9fUbzaXtmXFuzBP+sm+YeIlLDB8ZHm82l/1D2azQV9DimtCthgulXAj5iZ2GKJBxTVOj7eWFyV5W7L1cKnkGziN1osm+eVJn85YDfnkyUZ2gC4auZ+r6C5evuVxJrJjV8vVZGAMjIExMAbGwPhnGKPyMNXpUNrfpkVGw72buk+te5uKUzoU74YRO2ySTuy0UDeM5v86YEfXAmNgDIyBMTAGxsAYGANjYAyMgTEwBsbAGBgDY2AMjIExMP7XjJZnFRpj9DirkCxHNorM35g4i6zu5PENEKexna7GO10t7/Rrvts5KOiv6x9nklsRBVt5MAAAAABJRU5ErkJggg=="
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "home opacity-70 ml-4",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            height: "30px",
+                            viewBox: "0 -960 960 960",
+                            width: "30px",
+                            fill: "#ffffff",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 18,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 10,
-                        columnNumber: 13
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "-m-2 mx-2",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profile.ProfileMenu), {}, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 22,
+                            columnNumber: 12
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 21,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 7,
-                columnNumber: 9
+                lineNumber: 11,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 3,
-        columnNumber: 8
+        lineNumber: 7,
+        columnNumber: 5
     }, undefined);
 };
 _c = Header;
@@ -34477,7 +34516,92 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Searchbar":"kZ65z","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/logo.png":"b04ZD","./Profile":"h0rtF"}],"kZ65z":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0d82.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const SearchBar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex items-center justify-center h-screen",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "relative group",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text",
+                    placeholder: "Search...",
+                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-1 opacity-0 group-hover:opacity-60 focus:opacity-100 outline-2 outline-black"
+                }, void 0, false, {
+                    fileName: "src/components/Searchbar.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "absolute inset-y-0 right-0  flex items-center pr-2",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        height: "40px",
+                        viewBox: "0 0 24 24",
+                        width: "40px",
+                        fill: "#ffffff",
+                        className: " opacity-70 pr-2",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M0 0h24v24H0z",
+                                fill: "none"
+                            }, void 0, false, {
+                                fileName: "src/components/Searchbar.js",
+                                lineNumber: 21,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 6.42 13.58 4 10.5 4S5 6.42 5 9.5 7.42 15 10.5 15c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49l-4.24-4.25zM10.5 13C8.57 13 7 11.43 7 9.5S8.57 6 10.5 6 14 7.57 14 9.5 12.43 13 10.5 13z"
+                            }, void 0, false, {
+                                fileName: "src/components/Searchbar.js",
+                                lineNumber: 22,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Searchbar.js",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Searchbar.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Searchbar.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Searchbar.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = SearchBar;
+exports.default = SearchBar;
+var _c;
+$RefreshReg$(_c, "SearchBar");
+
+  $parcel$ReactRefreshHelpers$0d82.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -34615,7 +34739,163 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"8yaV8":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"b04ZD":[function(require,module,exports) {
+module.exports = require("185424d48c478371").getBundleURL("1G2bZ") + "logo.73091252.png" + "?" + Date.now();
+
+},{"185424d48c478371":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"h0rtF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b52a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b52a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ProfileMenu", ()=>ProfileMenu);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+function ProfileMenu() {
+    _s();
+    const [isOpen, setIsOpen] = (0, _react.useState)(false);
+    const menuRef = (0, _react.useRef)(null);
+    const toggleMenu = ()=>{
+        setIsOpen(!isOpen);
+    };
+    // Close the dropdown when clicking outside
+    (0, _react.useEffect)(()=>{
+        const handleClickOutside = (event)=>{
+            if (menuRef.current && !menuRef.current.contains(event.target)) setIsOpen(false);
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return ()=>{
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "relative",
+        ref: menuRef,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                onClick: toggleMenu,
+                xmlns: "http://www.w3.org/2000/svg",
+                height: "32px",
+                viewBox: "0 0 24 24",
+                width: "32px",
+                className: "cursor-pointer transition-transform duration-200 transform",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                        d: "M0 0h24v24H0z",
+                        fill: "none"
+                    }, void 0, false, {
+                        fileName: "src/components/Profile.js",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                        d: "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z",
+                        fill: "rgba(255, 255, 255, 0.7)"
+                    }, void 0, false, {
+                        fileName: "src/components/Profile.js",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 27,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `absolute right-0 mt-2 w-48 bg-white border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "#",
+                        className: "block px-4 py-2 text-gray-700 hover:bg-gray-100",
+                        children: "Profile"
+                    }, void 0, false, {
+                        fileName: "src/components/Profile.js",
+                        lineNumber: 47,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "#",
+                        className: "block px-4 py-2 text-gray-700 hover:bg-gray-100",
+                        children: "Settings"
+                    }, void 0, false, {
+                        fileName: "src/components/Profile.js",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "#",
+                        className: "block px-4 py-2 text-gray-700 hover:bg-gray-100",
+                        children: "Logout"
+                    }, void 0, false, {
+                        fileName: "src/components/Profile.js",
+                        lineNumber: 59,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Profile.js",
+                lineNumber: 42,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Profile.js",
+        lineNumber: 26,
+        columnNumber: 5
+    }, this);
+}
+_s(ProfileMenu, "yIsVPXmGJnWJAXf4YKobPzEQ+oo=");
+_c = ProfileMenu;
+var _c;
+$RefreshReg$(_c, "ProfileMenu");
+
+  $parcel$ReactRefreshHelpers$b52a.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34627,7 +34907,12 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body"
+        className: "body",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+            fileName: "src/components/Body.js",
+            lineNumber: 5,
+            columnNumber: 13
+        }, undefined)
     }, void 0, false, {
         fileName: "src/components/Body.js",
         lineNumber: 4,
