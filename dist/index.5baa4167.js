@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"hPIHA":[function(require,module,exports) {
+})({"gpvlO":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -34419,7 +34419,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
+        className: "header h-32",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "logo",
@@ -34428,12 +34428,12 @@ const Header = ()=>{
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
                     lineNumber: 5,
-                    columnNumber: 13
+                    columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
                 lineNumber: 4,
-                columnNumber: 10
+                columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "contents",
@@ -34444,7 +34444,7 @@ const Header = ()=>{
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
                         lineNumber: 8,
-                        columnNumber: 13
+                        columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "home",
@@ -34452,19 +34452,19 @@ const Header = ()=>{
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
                         lineNumber: 10,
-                        columnNumber: 13
+                        columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
                 lineNumber: 7,
-                columnNumber: 9
+                columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
         lineNumber: 3,
-        columnNumber: 8
+        columnNumber: 9
     }, undefined);
 };
 _c = Header;
@@ -34625,13 +34625,52 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _carousel = require("./Carousel");
+var _carouselDefault = parcelHelpers.interopDefault(_carousel);
+var _img1Jpg = require("../images/img1.jpg");
+var _img1JpgDefault = parcelHelpers.interopDefault(_img1Jpg);
+var _img2Jpg = require("../images/img2.jpg");
+var _img2JpgDefault = parcelHelpers.interopDefault(_img2Jpg);
+var _img3Jpg = require("../images/img3.jpg");
+var _img3JpgDefault = parcelHelpers.interopDefault(_img3Jpg);
+var _img4Jpg = require("../images/img4.jpg");
+var _img4JpgDefault = parcelHelpers.interopDefault(_img4Jpg);
+const slides = [
+    (0, _img1JpgDefault.default),
+    (0, _img2JpgDefault.default),
+    (0, _img3JpgDefault.default),
+    (0, _img4JpgDefault.default)
+];
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body"
+        className: "body w-[100vw] h-[80vh]",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "h-[80vh]",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
+                autoSlide: true,
+                autoSlideInterval: 3000,
+                children: slides.map((slide)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "h-[75vh] w-[96%] mx-[2%]",
+                        src: slide
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 15,
+                        columnNumber: 44
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 14,
+                columnNumber: 17
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/Body.js",
+            lineNumber: 13,
+            columnNumber: 13
+        }, undefined)
     }, void 0, false, {
         fileName: "src/components/Body.js",
-        lineNumber: 4,
-        columnNumber: 8
+        lineNumber: 12,
+        columnNumber: 9
     }, undefined);
 };
 _c = Body;
@@ -34644,6 +34683,155 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Carousel":"eWA0I","../images/img1.jpg":"78kaM","../images/img2.jpg":"4YYWd","../images/img3.jpg":"8y4LZ","../images/img4.jpg":"7drGN"}],"eWA0I":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fec5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fec5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 })=>{
+    _s();
+    const [currSlide, setCurrSlide] = (0, _react.useState)(0);
+    const prevSlide = ()=>setCurrSlide((currSlide)=>currSlide === 0 ? slides.length - 1 : currSlide - 1);
+    const nextSlide = ()=>setCurrSlide((currSlide)=>currSlide === slides.length - 1 ? 0 : currSlide + 1);
+    (0, _react.useEffect)(()=>{
+        if (!autoSlide) return;
+        const slideInterval = setInterval(nextSlide, autoSlideInterval);
+        return ()=>clearInterval(slideInterval);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "relative w-[100vw] overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: " flex transition-transform ease-out duration-500",
+                style: {
+                    transform: `translateX(-${currSlide * 100}%)`
+                },
+                children: slides
+            }, void 0, false, {
+                fileName: "src/components/Carousel.js",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute inset-9 flex items-center justify-between p-4",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: prevSlide,
+                        className: "p-2 rounded-full shadow bg-white/80 opacity-80 text-gray-900 hover:bg-white",
+                        children: "("
+                    }, void 0, false, {
+                        fileName: "src/components/Carousel.js",
+                        lineNumber: 16,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: nextSlide,
+                        className: "p-2 rounded-full shadow bg-white/80 opacity-80 text-gray-800 hover:bg-white",
+                        children: "."
+                    }, void 0, false, {
+                        fileName: "src/components/Carousel.js",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Carousel.js",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute bottom-4 right-0 left-0",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex items-center justify-center gap-2",
+                    children: slides.map((_, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: `transition-all w-3 h-3 bg-white rounded-full ${currSlide === i ? "p-2" : "bg-opacity-50"}`
+                        }, void 0, false, {
+                            fileName: "src/components/Carousel.js",
+                            lineNumber: 22,
+                            columnNumber: 25
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/components/Carousel.js",
+                    lineNumber: 20,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Carousel.js",
+                lineNumber: 19,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Carousel.js",
+        lineNumber: 13,
+        columnNumber: 9
+    }, undefined);
+};
+_s(Carousel, "yPEO2+dW1ToyyNUr16iXROUDyew=");
+_c = Carousel;
+exports.default = Carousel;
+var _c;
+$RefreshReg$(_c, "Carousel");
+
+  $parcel$ReactRefreshHelpers$fec5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"78kaM":[function(require,module,exports) {
+module.exports = require("2f279e65206290d7").getBundleURL("1G2bZ") + "img1.f05a4ee2.jpg" + "?" + Date.now();
+
+},{"2f279e65206290d7":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"4YYWd":[function(require,module,exports) {
+module.exports = require("ce83a5b0fbaf969e").getBundleURL("1G2bZ") + "img2.430268e0.jpg" + "?" + Date.now();
+
+},{"ce83a5b0fbaf969e":"lgJ39"}],"8y4LZ":[function(require,module,exports) {
+module.exports = require("abafbe1b8b314abd").getBundleURL("1G2bZ") + "img3.f9ded1b4.jpg" + "?" + Date.now();
+
+},{"abafbe1b8b314abd":"lgJ39"}],"7drGN":[function(require,module,exports) {
+module.exports = require("dbd359044fd18a7f").getBundleURL("1G2bZ") + "img4.c2194ce0.jpg" + "?" + Date.now();
+
+},{"dbd359044fd18a7f":"lgJ39"}]},["gpvlO","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
 
 //# sourceMappingURL=index.5baa4167.js.map

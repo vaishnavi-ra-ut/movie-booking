@@ -1,10 +1,10 @@
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities; 
 
-/* .camera{
+ .camera{
     background-image: url("./tb.png");
-} */
+}
 
 .header{
     display: flex;
@@ -31,7 +31,7 @@
     margin-right: 10px;
 }
 .body{
-    background-image: url("../MovieBooking/tb.png");
+    /* background-image: url("./tb.png"); */
     width: 200px;
     z-index: 2;
 }
