@@ -34424,11 +34424,7 @@ var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
 var _profile = require("./Profile");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-<<<<<<< HEAD
-        className: "header h-32",
-=======
         className: "flex justify-between items-center p-4 -mt-[284px]",
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -34437,15 +34433,6 @@ const Header = ()=>{
                     alt: "Logo"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
-<<<<<<< HEAD
-                    lineNumber: 5,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Header.js",
-                lineNumber: 4,
-                columnNumber: 13
-=======
                     lineNumber: 9,
                     columnNumber: 9
                 }, undefined)
@@ -34453,7 +34440,6 @@ const Header = ()=>{
                 fileName: "src/components/Header.js",
                 lineNumber: 8,
                 columnNumber: 7
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex items-center",
@@ -34467,13 +34453,8 @@ const Header = ()=>{
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-<<<<<<< HEAD
-                        lineNumber: 8,
-                        columnNumber: 17
-=======
                         lineNumber: 12,
                         columnNumber: 9
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "home opacity-70 ml-4",
@@ -34497,10 +34478,6 @@ const Header = ()=>{
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-<<<<<<< HEAD
-                        lineNumber: 10,
-                        columnNumber: 17
-=======
                         lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
@@ -34509,35 +34486,24 @@ const Header = ()=>{
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profile.ProfileMenu), {}, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 22,
-                            columnNumber: 12
+                            columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
                         lineNumber: 21,
                         columnNumber: 9
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-<<<<<<< HEAD
-                lineNumber: 7,
-                columnNumber: 13
-=======
                 lineNumber: 11,
                 columnNumber: 7
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-<<<<<<< HEAD
-        lineNumber: 3,
-        columnNumber: 9
-=======
         lineNumber: 7,
         columnNumber: 5
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
     }, undefined);
 };
 _c = Header;
@@ -34550,92 +34516,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Searchbar":"kZ65z","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/logo.png":"b04ZD","./Profile":"h0rtF"}],"kZ65z":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0d82.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const SearchBar = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex items-center justify-center h-screen",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "relative group",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text",
-                    placeholder: "Search...",
-                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-1 opacity-0 group-hover:opacity-60 focus:opacity-100 outline-2 outline-black"
-                }, void 0, false, {
-                    fileName: "src/components/Searchbar.js",
-                    lineNumber: 7,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "absolute inset-y-0 right-0  flex items-center pr-2",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        height: "40px",
-                        viewBox: "0 0 24 24",
-                        width: "40px",
-                        fill: "#ffffff",
-                        className: " opacity-70 pr-2",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                d: "M0 0h24v24H0z",
-                                fill: "none"
-                            }, void 0, false, {
-                                fileName: "src/components/Searchbar.js",
-                                lineNumber: 21,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 6.42 13.58 4 10.5 4S5 6.42 5 9.5 7.42 15 10.5 15c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49l-4.24-4.25zM10.5 13C8.57 13 7 11.43 7 9.5S8.57 6 10.5 6 14 7.57 14 9.5 12.43 13 10.5 13z"
-                            }, void 0, false, {
-                                fileName: "src/components/Searchbar.js",
-                                lineNumber: 22,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Searchbar.js",
-                        lineNumber: 13,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/Searchbar.js",
-                    lineNumber: 12,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Searchbar.js",
-            lineNumber: 6,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Searchbar.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = SearchBar;
-exports.default = SearchBar;
-var _c;
-$RefreshReg$(_c, "SearchBar");
-
-  $parcel$ReactRefreshHelpers$0d82.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Searchbar":"kZ65z","../assets/logo.png":"b04ZD","./Profile":"h0rtF"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -34773,7 +34654,92 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"b04ZD":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"kZ65z":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0d82.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const SearchBar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex items-center justify-center h-screen",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "relative group",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text",
+                    placeholder: "Search...",
+                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-1 opacity-0 group-hover:opacity-60 focus:opacity-100 outline-2 outline-black"
+                }, void 0, false, {
+                    fileName: "src/components/Searchbar.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "absolute inset-y-0 right-0  flex items-center pr-2",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        height: "40px",
+                        viewBox: "0 0 24 24",
+                        width: "40px",
+                        fill: "#ffffff",
+                        className: " opacity-70 pr-2",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M0 0h24v24H0z",
+                                fill: "none"
+                            }, void 0, false, {
+                                fileName: "src/components/Searchbar.js",
+                                lineNumber: 21,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 6.42 13.58 4 10.5 4S5 6.42 5 9.5 7.42 15 10.5 15c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49l-4.24-4.25zM10.5 13C8.57 13 7 11.43 7 9.5S8.57 6 10.5 6 14 7.57 14 9.5 12.43 13 10.5 13z"
+                            }, void 0, false, {
+                                fileName: "src/components/Searchbar.js",
+                                lineNumber: 22,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Searchbar.js",
+                        lineNumber: 13,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Searchbar.js",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Searchbar.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Searchbar.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = SearchBar;
+exports.default = SearchBar;
+var _c;
+$RefreshReg$(_c, "SearchBar");
+
+  $parcel$ReactRefreshHelpers$0d82.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b04ZD":[function(require,module,exports) {
 module.exports = require("185424d48c478371").getBundleURL("1G2bZ") + "logo.73091252.png" + "?" + Date.now();
 
 },{"185424d48c478371":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -34957,7 +34923,6 @@ const slides = [
 ];
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-<<<<<<< HEAD
         className: "body w-[100vw] h-[80vh]",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "h-[80vh]",
@@ -34980,12 +34945,6 @@ const Body = ()=>{
         }, void 0, false, {
             fileName: "src/components/Body.js",
             lineNumber: 13,
-=======
-        className: "body",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-            fileName: "src/components/Body.js",
-            lineNumber: 5,
->>>>>>> e6390cbea91a3af67669dd7e1ff3f162feca8b8b
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
@@ -35109,42 +35068,7 @@ $RefreshReg$(_c, "Carousel");
 },{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"78kaM":[function(require,module,exports) {
 module.exports = require("2f279e65206290d7").getBundleURL("1G2bZ") + "img1.f05a4ee2.jpg" + "?" + Date.now();
 
-},{"2f279e65206290d7":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"4YYWd":[function(require,module,exports) {
+},{"2f279e65206290d7":"lgJ39"}],"4YYWd":[function(require,module,exports) {
 module.exports = require("ce83a5b0fbaf969e").getBundleURL("1G2bZ") + "img2.430268e0.jpg" + "?" + Date.now();
 
 },{"ce83a5b0fbaf969e":"lgJ39"}],"8y4LZ":[function(require,module,exports) {
