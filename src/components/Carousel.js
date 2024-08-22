@@ -13,7 +13,7 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
         <div className="relative w-[100vw] overflow-hidden">
             <div className=" flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${currSlide * 100}%)` }}>{slides}</div>
             <div className="absolute inset-9 flex items-center justify-between p-4">
-                <button onClick={prevSlide} className="p-2 rounded-full shadow bg-white/80 opacity-80 text-gray-900 hover:bg-white">(</button>
+                <button onClick={prevSlide} className="p-2 rounded-full shadow bg-white/80 opacity-80 text-gray-900 hover:bg-white"></button>
                 <button onClick={nextSlide} className="p-2 rounded-full shadow bg-white/80 opacity-80 text-gray-800 hover:bg-white">.</button>
             </div>
             <div className="absolute bottom-4 right-0 left-0">
