@@ -2962,23 +2962,30 @@ var _header = require("./src/components/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 var _body = require("./src/components/Body");
 var _bodyDefault = parcelHelpers.interopDefault(_body);
+var _cards = require("../movie-booking/src/components/Cards");
+var _cardsDefault = parcelHelpers.interopDefault(_cards);
 const Layout = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 9
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bodyDefault.default), {}, void 0, false, {
                 fileName: "app.js",
-                lineNumber: 10,
+                lineNumber: 11,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {}, void 0, false, {
+                fileName: "app.js",
+                lineNumber: 12,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "app.js",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 _c = Layout;
@@ -2987,8 +2994,8 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Layout, {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 17,
-            columnNumber: 17
+            lineNumber: 19,
+            columnNumber: 18
         }, undefined)
     }
 ]);
@@ -2997,7 +3004,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: appRouter
 }, void 0, false, {
     fileName: "app.js",
-    lineNumber: 22,
+    lineNumber: 24,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3008,7 +3015,7 @@ $RefreshReg$(_c, "Layout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./src/components/Header":"hsJbF","./src/components/Body":"8yaV8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./src/components/Header":"hsJbF","./src/components/Body":"8yaV8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../movie-booking/src/components/Cards":"9rJEe"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -34424,12 +34431,12 @@ var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
 var _profile = require("./Profile");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex justify-between items-center p-4 h-[70px] -mt-7 mb-4",
+        className: "flex justify-between items-center p-7 h-16 -mt-2 mb-4",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: (0, _logoPngDefault.default),
-                    className: "logo w-[180px] h-[48px] mt-1 ml-2",
+                    className: "logo w-64 h-20 mt-3 ml-2",
                     alt: "Logo"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
@@ -34460,10 +34467,9 @@ const Header = ()=>{
                         className: "home opacity-70 ml-4",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                             xmlns: "http://www.w3.org/2000/svg",
-                            height: "30px",
                             viewBox: "0 -960 960 960",
-                            width: "30px",
                             fill: "#ffffff",
+                            className: "w-10 h-10",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                 d: "M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
                             }, void 0, false, {
@@ -34482,7 +34488,7 @@ const Header = ()=>{
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "-m-2 mx-2",
+                        className: "-m-2 mx-2 z-10",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profile.ProfileMenu), {}, void 0, false, {
                             fileName: "src/components/Header.js",
                             lineNumber: 22,
@@ -34675,7 +34681,7 @@ const SearchBar = ()=>{
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                     type: "text",
                     placeholder: "Search...",
-                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-1 opacity-0 group-hover:opacity-60 focus:opacity-100 outline-2 outline-black"
+                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-2 opacity-0 group-hover:opacity-60 focus:opacity-100 outline-2 outline-black font-bold"
                 }, void 0, false, {
                     fileName: "src/components/Searchbar.js",
                     lineNumber: 7,
@@ -34685,25 +34691,23 @@ const SearchBar = ()=>{
                     className: "absolute inset-y-0 right-0  flex items-center pr-2",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                         xmlns: "http://www.w3.org/2000/svg",
-                        height: "40px",
                         viewBox: "0 0 24 24",
-                        width: "40px",
                         fill: "#ffffff",
-                        className: " opacity-70 pr-2",
+                        className: " opacity-70 pr-2 h-14 w-14 mr-1",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                 d: "M0 0h24v24H0z",
                                 fill: "none"
                             }, void 0, false, {
                                 fileName: "src/components/Searchbar.js",
-                                lineNumber: 21,
+                                lineNumber: 19,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                 d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 6.42 13.58 4 10.5 4S5 6.42 5 9.5 7.42 15 10.5 15c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49l-4.24-4.25zM10.5 13C8.57 13 7 11.43 7 9.5S8.57 6 10.5 6 14 7.57 14 9.5 12.43 13 10.5 13z"
                             }, void 0, false, {
                                 fileName: "src/components/Searchbar.js",
-                                lineNumber: 22,
+                                lineNumber: 20,
                                 columnNumber: 13
                             }, undefined)
                         ]
@@ -34815,17 +34819,15 @@ function ProfileMenu() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                 onClick: toggleMenu,
                 xmlns: "http://www.w3.org/2000/svg",
-                height: "32px",
                 viewBox: "0 0 24 24",
-                width: "32px",
-                className: "cursor-pointer transition-transform duration-200 transform",
+                className: "cursor-pointer transition-transform duration-200 transform h-12 w-12 mr-4",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                         d: "M0 0h24v24H0z",
                         fill: "none"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 35,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -34833,7 +34835,7 @@ function ProfileMenu() {
                         fill: "rgba(255, 255, 255, 0.7)"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 36,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this)
                 ]
@@ -34851,7 +34853,7 @@ function ProfileMenu() {
                         children: "Profile"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 47,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -34860,7 +34862,7 @@ function ProfileMenu() {
                         children: "Settings"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 53,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
@@ -34869,13 +34871,13 @@ function ProfileMenu() {
                         children: "Logout"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 59,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Profile.js",
-                lineNumber: 42,
+                lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
@@ -34907,13 +34909,13 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _carousel = require("./Carousel");
 var _carouselDefault = parcelHelpers.interopDefault(_carousel);
-var _img1Jpg = require("../images/img1.jpg");
+var _img1Jpg = require("../assets/images/img1.jpg");
 var _img1JpgDefault = parcelHelpers.interopDefault(_img1Jpg);
-var _img2Jpg = require("../images/img2.jpg");
+var _img2Jpg = require("../assets/images/img2.jpg");
 var _img2JpgDefault = parcelHelpers.interopDefault(_img2Jpg);
-var _img3Jpg = require("../images/img3.jpg");
+var _img3Jpg = require("../assets/images/img3.jpg");
 var _img3JpgDefault = parcelHelpers.interopDefault(_img3Jpg);
-var _img4Jpg = require("../images/img4.jpg");
+var _img4Jpg = require("../assets/images/img4.jpg");
 var _img4JpgDefault = parcelHelpers.interopDefault(_img4Jpg);
 const slides = [
     (0, _img1JpgDefault.default),
@@ -34930,7 +34932,7 @@ const Body = ()=>{
                 autoSlide: true,
                 autoSlideInterval: 3000,
                 children: slides.map((slide)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "h-[75vh] w-[96%] mx-[2%]",
+                        className: "h-[75vh] w-[96%] mx-[2%] mt-[2%]",
                         src: slide
                     }, void 0, false, {
                         fileName: "src/components/Body.js",
@@ -34963,7 +34965,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Carousel":"eWA0I","../images/img1.jpg":"78kaM","../images/img2.jpg":"4YYWd","../images/img3.jpg":"8y4LZ","../images/img4.jpg":"7drGN"}],"eWA0I":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Carousel":"eWA0I","../assets/images/img1.jpg":"8PPxH","../assets/images/img2.jpg":"4Hr2y","../assets/images/img3.jpg":"fUvhd","../assets/images/img4.jpg":"f7XRq"}],"eWA0I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fec5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34975,32 +34977,45 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _s = $RefreshSig$();
-const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 })=>{
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 4000 })=>{
     _s();
     const [currSlide, setCurrSlide] = (0, _react.useState)(0);
-    const prevSlide = ()=>setCurrSlide((currSlide)=>currSlide === 0 ? slides.length - 1 : currSlide - 1);
-    const nextSlide = ()=>setCurrSlide((currSlide)=>currSlide === slides.length - 1 ? 0 : currSlide + 1);
+    const [isManual, setIsManual] = (0, _react.useState)(false);
+    const prevSlide = ()=>{
+        setIsManual(true);
+        setCurrSlide((currSlide)=>currSlide === 0 ? slides.length - 1 : currSlide - 1);
+    };
+    const nextSlide = ()=>{
+        setIsManual(true);
+        setCurrSlide((currSlide)=>currSlide === slides.length - 1 ? 0 : currSlide + 1);
+    };
     (0, _react.useEffect)(()=>{
         if (!autoSlide) return;
-        const slideInterval = setInterval(nextSlide, autoSlideInterval);
+        const slideInterval = setInterval(()=>{
+            if (!isManual) nextSlide();
+            else setIsManual(false);
+        }, autoSlideInterval);
         return ()=>clearInterval(slideInterval);
-    }, []);
+    }, [
+        currSlide,
+        isManual
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "relative w-[100vw] overflow-hidden",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: " flex transition-transform ease-out duration-500",
+                className: "flex transition-transform ease-out duration-500",
                 style: {
                     transform: `translateX(-${currSlide * 100}%)`
                 },
                 children: slides
             }, void 0, false, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 14,
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "absolute inset-9 flex items-center justify-between p-4",
+                className: "absolute inset-8 flex items-center justify-between p-4",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         onClick: prevSlide,
@@ -35019,17 +35034,17 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                                 points: "15 18 9 12 15 6"
                             }, void 0, false, {
                                 fileName: "src/components/Carousel.js",
-                                lineNumber: 17,
-                                columnNumber: 21
+                                lineNumber: 39,
+                                columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Carousel.js",
-                            lineNumber: 16,
-                            columnNumber: 133
+                            lineNumber: 38,
+                            columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Carousel.js",
-                        lineNumber: 16,
+                        lineNumber: 37,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35049,23 +35064,23 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                                 points: "9 18 15 12 9 6"
                             }, void 0, false, {
                                 fileName: "src/components/Carousel.js",
-                                lineNumber: 21,
-                                columnNumber: 21
+                                lineNumber: 44,
+                                columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Carousel.js",
-                            lineNumber: 20,
-                            columnNumber: 133
+                            lineNumber: 43,
+                            columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Carousel.js",
-                        lineNumber: 20,
+                        lineNumber: 42,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 15,
+                lineNumber: 36,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35074,29 +35089,29 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                     className: "flex items-center justify-center gap-2",
                     children: slides.map((_, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: `transition-all w-3 h-3 bg-white rounded-full ${currSlide === i ? "p-2" : "bg-opacity-50"}`
-                        }, void 0, false, {
+                        }, i, false, {
                             fileName: "src/components/Carousel.js",
-                            lineNumber: 28,
+                            lineNumber: 51,
                             columnNumber: 25
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/components/Carousel.js",
-                    lineNumber: 26,
+                    lineNumber: 49,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 25,
+                lineNumber: 48,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Carousel.js",
-        lineNumber: 13,
+        lineNumber: 32,
         columnNumber: 9
     }, undefined);
 };
-_s(Carousel, "yPEO2+dW1ToyyNUr16iXROUDyew=");
+_s(Carousel, "/07Qss9yEWodvpflYrzqE6+Y98g=");
 _c = Carousel;
 exports.default = Carousel;
 var _c;
@@ -35107,18 +35122,201 @@ $RefreshReg$(_c, "Carousel");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"78kaM":[function(require,module,exports) {
-module.exports = require("2f279e65206290d7").getBundleURL("1G2bZ") + "img1.f05a4ee2.jpg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"8PPxH":[function(require,module,exports) {
+module.exports = require("5c43b7b9673b3625").getBundleURL("1G2bZ") + "img1.38381241.jpg" + "?" + Date.now();
 
-},{"2f279e65206290d7":"lgJ39"}],"4YYWd":[function(require,module,exports) {
-module.exports = require("ce83a5b0fbaf969e").getBundleURL("1G2bZ") + "img2.430268e0.jpg" + "?" + Date.now();
+},{"5c43b7b9673b3625":"lgJ39"}],"4Hr2y":[function(require,module,exports) {
+module.exports = require("788ccee41d8604fd").getBundleURL("1G2bZ") + "img2.f53bee19.jpg" + "?" + Date.now();
 
-},{"ce83a5b0fbaf969e":"lgJ39"}],"8y4LZ":[function(require,module,exports) {
-module.exports = require("abafbe1b8b314abd").getBundleURL("1G2bZ") + "img3.f9ded1b4.jpg" + "?" + Date.now();
+},{"788ccee41d8604fd":"lgJ39"}],"fUvhd":[function(require,module,exports) {
+module.exports = require("1df3e7736fec72b1").getBundleURL("1G2bZ") + "img3.5a2e49a4.jpg" + "?" + Date.now();
 
-},{"abafbe1b8b314abd":"lgJ39"}],"7drGN":[function(require,module,exports) {
-module.exports = require("dbd359044fd18a7f").getBundleURL("1G2bZ") + "img4.c2194ce0.jpg" + "?" + Date.now();
+},{"1df3e7736fec72b1":"lgJ39"}],"f7XRq":[function(require,module,exports) {
+module.exports = require("bc2965a07aff4b68").getBundleURL("1G2bZ") + "img4.8420d17f.jpg" + "?" + Date.now();
 
-},{"dbd359044fd18a7f":"lgJ39"}]},["gpvlO","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
+},{"bc2965a07aff4b68":"lgJ39"}],"9rJEe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1709 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1709.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _streeJpg = require("../assets/stree.jpg");
+var _streeJpgDefault = parcelHelpers.interopDefault(_streeJpg);
+const posterImage = "/path/to/uploaded/image.png";
+const movies = [
+    {
+        title: "Stree 2: Sarkate Ka Aatank",
+        genre: "Comedy/Horror",
+        rating: 9,
+        votes: "190.1K Votes",
+        imageUrl: (0, _streeJpgDefault.default)
+    },
+    {
+        title: "Alien: Romulus",
+        genre: "Horror/Sci-Fi/Thriller",
+        rating: 8.3,
+        votes: "1.3K Votes",
+        imageUrl: posterImage
+    },
+    {
+        title: "Khel Khel Mein",
+        genre: "Comedy/Drama",
+        rating: 8.2,
+        votes: "35K Votes",
+        imageUrl: posterImage
+    },
+    {
+        title: "Vedaa",
+        genre: "Action/Drama",
+        rating: 8.1,
+        votes: "33.8K Votes",
+        imageUrl: posterImage
+    },
+    {
+        title: "Stree 2: Sarkate Ka Aatank",
+        genre: "Comedy/Horror",
+        rating: 9,
+        votes: "190.1K Votes",
+        imageUrl: (0, _streeJpgDefault.default)
+    },
+    {
+        title: "Stree 2: Sarkate Ka Aatank",
+        genre: "Comedy/Horror",
+        rating: 9,
+        votes: "190.1K Votes",
+        imageUrl: (0, _streeJpgDefault.default)
+    },
+    {
+        title: "Harold and the Purple Crayon",
+        genre: "Action/Adventure/Fantasy",
+        rating: 7.3,
+        votes: "628 Votes",
+        imageUrl: posterImage
+    },
+    {
+        title: "Stree 2: Sarkate Ka Aatank",
+        genre: "Comedy/Horror",
+        rating: 9,
+        votes: "190.1K Votes",
+        imageUrl: (0, _streeJpgDefault.default)
+    },
+    {
+        title: "Stree 2: Sarkate Ka Aatank",
+        genre: "Comedy/Horror",
+        rating: 9,
+        votes: "190.1K Votes",
+        imageUrl: (0, _streeJpgDefault.default)
+    }
+];
+const MovieCard = ({ movie })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "bg-white rounded-lg shadow-lg overflow-hidden w-[18.1%] m-[0.9%]",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: movie.imageUrl,
+                alt: movie.title,
+                className: "w-full h-96 object-cover"
+            }, void 0, false, {
+                fileName: "src/components/Cards.js",
+                lineNumber: 73,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "p-4",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "font-bold text-lg",
+                        children: movie.title
+                    }, void 0, false, {
+                        fileName: "src/components/Cards.js",
+                        lineNumber: 75,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-gray-500",
+                        children: movie.genre
+                    }, void 0, false, {
+                        fileName: "src/components/Cards.js",
+                        lineNumber: 76,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex items-center text-sm mt-2",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "text-red-500",
+                                children: [
+                                    "\u2B50 ",
+                                    movie.rating,
+                                    "/10"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Cards.js",
+                                lineNumber: 78,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "ml-2 text-gray-700",
+                                children: movie.votes
+                            }, void 0, false, {
+                                fileName: "src/components/Cards.js",
+                                lineNumber: 79,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Cards.js",
+                        lineNumber: 77,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Cards.js",
+                lineNumber: 74,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Cards.js",
+        lineNumber: 72,
+        columnNumber: 9
+    }, undefined);
+};
+_c = MovieCard;
+const MovieList = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-wrap overflow-hidden w-[100vw] p-[1%]",
+        children: movies.map((movie, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MovieCard, {
+                movie: movie
+            }, index, false, {
+                fileName: "src/components/Cards.js",
+                lineNumber: 90,
+                columnNumber: 17
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/components/Cards.js",
+        lineNumber: 88,
+        columnNumber: 9
+    }, undefined);
+};
+_c1 = MovieList;
+exports.default = MovieList;
+var _c, _c1;
+$RefreshReg$(_c, "MovieCard");
+$RefreshReg$(_c1, "MovieList");
+
+  $parcel$ReactRefreshHelpers$1709.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../assets/stree.jpg":"byRD4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"byRD4":[function(require,module,exports) {
+module.exports = require("4ce9dc3176e78c01").getBundleURL("1G2bZ") + "stree.28b8278f.jpg" + "?" + Date.now();
+
+},{"4ce9dc3176e78c01":"lgJ39"}]},["gpvlO","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
 
 //# sourceMappingURL=index.5baa4167.js.map

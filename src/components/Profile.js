@@ -27,10 +27,8 @@ export function ProfileMenu() {
       <svg
         onClick={toggleMenu}
         xmlns="http://www.w3.org/2000/svg"
-        height="32px"
         viewBox="0 0 24 24"
-        width="32px"
-        className="cursor-pointer transition-transform duration-200 transform"
+        className="cursor-pointer transition-transform duration-200 transform h-12 w-12 mr-4"
       >
         <path d="M0 0h24v24H0z" fill="none" />
         <path
@@ -40,9 +38,8 @@ export function ProfileMenu() {
       </svg>
 
       <div
-        className={`absolute right-0 mt-2 w-48 bg-white border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${
-          isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
-        }`}
+        className={`absolute right-0 mt-2 w-48 bg-white border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+          }`}
       >
         <a
           href="#"
