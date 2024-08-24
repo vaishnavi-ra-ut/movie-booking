@@ -2988,7 +2988,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Layout, {}, void 0, false, {
             fileName: "app.js",
             lineNumber: 17,
-            columnNumber: 17
+            columnNumber: 18
         }, undefined)
     }
 ]);
@@ -34422,87 +34422,101 @@ var _searchbarDefault = parcelHelpers.interopDefault(_searchbar);
 var _logoPng = require("../assets/logo.png");
 var _logoPngDefault = parcelHelpers.interopDefault(_logoPng);
 var _profile = require("./Profile");
+var _location = require("./Location");
+var _locationDefault = parcelHelpers.interopDefault(_location);
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex justify-between items-center p-4 h-[70px] -mt-7 mb-4",
+        className: "flex justify-between items-center w-[100vw] pl-4 pr-1 h-[3rem] mt-2 mb-1",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: (0, _logoPngDefault.default),
-                    className: "logo w-[180px] h-[48px] mt-1 ml-2",
+                    className: "logo w-56 h-14 mt-3 ml-1",
                     alt: "Logo"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 9,
+                    lineNumber: 10,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex items-center",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "w-full max-w-sm -mr-5",
+                        className: " max-w-sm mt-2",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchbarDefault.default), {}, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 13,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 12,
+                        lineNumber: 14,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "home opacity-70 ml-4",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationDefault.default), {
+                            className: "z-20"
+                        }, void 0, false, {
+                            fileName: "src/components/Header.js",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "home opacity-70 ml-4 ",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                             xmlns: "http://www.w3.org/2000/svg",
-                            height: "30px",
                             viewBox: "0 -960 960 960",
-                            width: "30px",
                             fill: "#ffffff",
+                            className: "w-9 h-9",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                 d: "M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
                             }, void 0, false, {
                                 fileName: "src/components/Header.js",
-                                lineNumber: 18,
+                                lineNumber: 24,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 17,
+                            lineNumber: 23,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 16,
+                        lineNumber: 22,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "-m-2 mx-2 z-10",
+                        className: "mr-1 z-10 pr-1",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profile.ProfileMenu), {}, void 0, false, {
                             fileName: "src/components/Header.js",
-                            lineNumber: 22,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 21,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 11,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 7,
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };
@@ -34516,7 +34530,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Searchbar":"kZ65z","../assets/logo.png":"b04ZD","./Profile":"h0rtF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZ65z":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Searchbar":"kZ65z","../assets/logo.png":"b04ZD","./Profile":"h0rtF","./Location":"iC1pF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZ65z":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34537,7 +34551,7 @@ const SearchBar = ()=>{
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                     type: "text",
                     placeholder: "Search...",
-                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-1 opacity-0 group-hover:opacity-60 focus:opacity-100 outline-2 outline-black"
+                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-2 opacity-0 group-hover:opacity-60 focus:opacity-100"
                 }, void 0, false, {
                     fileName: "src/components/Searchbar.js",
                     lineNumber: 7,
@@ -34547,36 +34561,34 @@ const SearchBar = ()=>{
                     className: "absolute inset-y-0 right-0  flex items-center pr-2",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                         xmlns: "http://www.w3.org/2000/svg",
-                        height: "40px",
                         viewBox: "0 0 24 24",
-                        width: "40px",
                         fill: "#ffffff",
-                        className: " opacity-70 pr-2",
+                        className: " opacity-70 pr-2 h-12 w-12 mr-1",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                 d: "M0 0h24v24H0z",
                                 fill: "none"
                             }, void 0, false, {
                                 fileName: "src/components/Searchbar.js",
-                                lineNumber: 21,
+                                lineNumber: 18,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                 d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 6.42 13.58 4 10.5 4S5 6.42 5 9.5 7.42 15 10.5 15c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49l-4.24-4.25zM10.5 13C8.57 13 7 11.43 7 9.5S8.57 6 10.5 6 14 7.57 14 9.5 12.43 13 10.5 13z"
                             }, void 0, false, {
                                 fileName: "src/components/Searchbar.js",
-                                lineNumber: 22,
+                                lineNumber: 19,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Searchbar.js",
-                        lineNumber: 13,
+                        lineNumber: 12,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Searchbar.js",
-                    lineNumber: 12,
+                    lineNumber: 11,
                     columnNumber: 9
                 }, undefined)
             ]
@@ -34815,17 +34827,15 @@ function ProfileMenu() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                 onClick: toggleMenu,
                 xmlns: "http://www.w3.org/2000/svg",
-                height: "32px",
                 viewBox: "0 0 24 24",
-                width: "32px",
-                className: "cursor-pointer transition-transform duration-200 transform",
+                className: "cursor-pointer transition-transform duration-200 transform h-9 w-9 mr-4",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                         d: "M0 0h24v24H0z",
                         fill: "none"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 35,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -34833,7 +34843,7 @@ function ProfileMenu() {
                         fill: "rgba(255, 255, 255, 0.7)"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 36,
+                        lineNumber: 34,
                         columnNumber: 9
                     }, this)
                 ]
@@ -34843,39 +34853,39 @@ function ProfileMenu() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: `absolute right-0 mt-2 w-48 bg-white border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"}`,
+                className: `absolute right-0 mt-2 w-48 bg-gray-200 border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${isOpen ? "opacity-90 scale-100" : "opacity-0 scale-95 pointer-events-none"}`,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "#",
-                        className: "block px-4 py-2 text-gray-700 hover:bg-gray-100",
+                        className: "block px-4 py-2 text-black hover:bg-gray-200",
                         children: "Profile"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 47,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "#",
-                        className: "block px-4 py-2 text-gray-700 hover:bg-gray-100",
+                        className: "block px-4 py-2 text-black hover:bg-gray-200",
                         children: "Settings"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 53,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                         href: "#",
-                        className: "block px-4 py-2 text-gray-700 hover:bg-gray-100",
+                        className: "block px-4 py-2 text-black hover:bg-gray-200",
                         children: "Logout"
                     }, void 0, false, {
                         fileName: "src/components/Profile.js",
-                        lineNumber: 59,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Profile.js",
-                lineNumber: 42,
+                lineNumber: 40,
                 columnNumber: 7
             }, this)
         ]
@@ -34895,6 +34905,116 @@ $RefreshReg$(_c, "ProfileMenu");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iC1pF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6828 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6828.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const Location = ()=>{
+    _s();
+    const [searchTerm, setSearchTerm] = (0, _react.useState)("");
+    const [showDropdown, setShowDropdown] = (0, _react.useState)(false);
+    const dropdownRef = (0, _react.useRef)(null);
+    const locations = [
+        "New York",
+        "Los Angeles",
+        "Chicago",
+        "Houston",
+        "Phoenix",
+        "Philadelphia",
+        "San Antonio",
+        "San Diego",
+        "Dallas",
+        "San Jose"
+    ];
+    const filteredLocations = locations.filter((location)=>location.toLowerCase().includes(searchTerm.toLowerCase()));
+    const handleSearchChange = (e)=>{
+        setSearchTerm(e.target.value);
+    };
+    const toggleDropdown = ()=>{
+        setShowDropdown(!showDropdown);
+    };
+    const handleLocationSelect = (location)=>{
+        setSearchTerm(location);
+        setShowDropdown(false);
+    };
+    // Effect to close the dropdown when clicking outside
+    (0, _react.useEffect)(()=>{
+        const handleClickOutside = (event)=>{
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) setShowDropdown(false);
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return ()=>{
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [
+        dropdownRef
+    ]);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "relative -mr-3",
+        ref: dropdownRef,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                value: searchTerm,
+                onChange: handleSearchChange,
+                onClick: toggleDropdown,
+                placeholder: "Location ",
+                className: "w-full p-2 mt-1 -mr-1 h-9 text-black bg-gray-200 bg-opacity-20 border rounded-lg"
+            }, void 0, false, {
+                fileName: "src/components/Location.js",
+                lineNumber: 54,
+                columnNumber: 7
+            }, undefined),
+            showDropdown && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                className: "absolute w-full mt-1 bg-gray-200 bg-opacity-90 border rounded-lg shadow-lg z-20",
+                children: filteredLocations.length > 0 ? filteredLocations.map((location, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                        onClick: ()=>handleLocationSelect(location),
+                        className: "px-4 py-2 cursor-pointer hover:bg-gray-300",
+                        children: location
+                    }, index, false, {
+                        fileName: "src/components/Location.js",
+                        lineNumber: 66,
+                        columnNumber: 15
+                    }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                    className: "px-4 py-2 text-gray-500",
+                    children: "No locations found"
+                }, void 0, false, {
+                    fileName: "src/components/Location.js",
+                    lineNumber: 75,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Location.js",
+                lineNumber: 63,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Location.js",
+        lineNumber: 53,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Location, "QKr2KC72Az02AqGsKGccBv6KaYA=");
+_c = Location;
+exports.default = Location;
+var _c;
+$RefreshReg$(_c, "Location");
+
+  $parcel$ReactRefreshHelpers$6828.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8yaV8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0606 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -34907,14 +35027,16 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _carousel = require("./Carousel");
 var _carouselDefault = parcelHelpers.interopDefault(_carousel);
-var _img1Jpg = require("../images/img1.jpg");
+var _img1Jpg = require("../assets/images/img1.jpg");
 var _img1JpgDefault = parcelHelpers.interopDefault(_img1Jpg);
-var _img2Jpg = require("../images/img2.jpg");
+var _img2Jpg = require("../assets/images/img2.jpg");
 var _img2JpgDefault = parcelHelpers.interopDefault(_img2Jpg);
-var _img3Jpg = require("../images/img3.jpg");
+var _img3Jpg = require("../assets/images/img3.jpg");
 var _img3JpgDefault = parcelHelpers.interopDefault(_img3Jpg);
-var _img4Jpg = require("../images/img4.jpg");
+var _img4Jpg = require("../assets/images/img4.jpg");
 var _img4JpgDefault = parcelHelpers.interopDefault(_img4Jpg);
+var _cards = require("../components/Cards");
+var _cardsDefault = parcelHelpers.interopDefault(_cards);
 const slides = [
     (0, _img1JpgDefault.default),
     (0, _img2JpgDefault.default),
@@ -34924,32 +35046,53 @@ const slides = [
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body w-[100vw] h-[80vh] -m-2",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "h-[80vh]",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
-                autoSlide: true,
-                autoSlideInterval: 3000,
-                children: slides.map((slide)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "h-[75vh] w-[96%] mx-[2%]",
-                        src: slide
-                    }, void 0, false, {
-                        fileName: "src/components/Body.js",
-                        lineNumber: 15,
-                        columnNumber: 44
-                    }, undefined))
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "h-[80vh]",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
+                    autoSlide: true,
+                    autoSlideInterval: 3000,
+                    children: slides.map((slide)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "h-[75vh] w-[96%] mx-[2%] mt-[2%] rounded-lg",
+                            src: slide
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 17,
+                            columnNumber: 44
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 16,
+                    columnNumber: 17
+                }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 14,
-                columnNumber: 17
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "text-gray-300 ml-7 mt-2 -mb-2 font-semibold text-3xl font-serif",
+                children: "Latest Movies Near You"
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 20,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {}, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 24,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 23,
+                columnNumber: 13
             }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/Body.js",
-            lineNumber: 13,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
+        ]
+    }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 12,
+        lineNumber: 14,
         columnNumber: 9
     }, undefined);
 };
@@ -34963,7 +35106,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Carousel":"eWA0I","../images/img1.jpg":"78kaM","../images/img2.jpg":"4YYWd","../images/img3.jpg":"8y4LZ","../images/img4.jpg":"7drGN"}],"eWA0I":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Carousel":"eWA0I","../assets/images/img1.jpg":"8PPxH","../assets/images/img2.jpg":"4Hr2y","../assets/images/img3.jpg":"fUvhd","../assets/images/img4.jpg":"f7XRq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../components/Cards":"9rJEe"}],"eWA0I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fec5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34975,28 +35118,41 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _s = $RefreshSig$();
-const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 3000 })=>{
+const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 4000 })=>{
     _s();
     const [currSlide, setCurrSlide] = (0, _react.useState)(0);
-    const prevSlide = ()=>setCurrSlide((currSlide)=>currSlide === 0 ? slides.length - 1 : currSlide - 1);
-    const nextSlide = ()=>setCurrSlide((currSlide)=>currSlide === slides.length - 1 ? 0 : currSlide + 1);
+    const [isManual, setIsManual] = (0, _react.useState)(false);
+    const prevSlide = ()=>{
+        setIsManual(true);
+        setCurrSlide((currSlide)=>currSlide === 0 ? slides.length - 1 : currSlide - 1);
+    };
+    const nextSlide = ()=>{
+        setIsManual(true);
+        setCurrSlide((currSlide)=>currSlide === slides.length - 1 ? 0 : currSlide + 1);
+    };
     (0, _react.useEffect)(()=>{
         if (!autoSlide) return;
-        const slideInterval = setInterval(nextSlide, autoSlideInterval);
+        const slideInterval = setInterval(()=>{
+            if (!isManual) nextSlide();
+            else setIsManual(false);
+        }, autoSlideInterval);
         return ()=>clearInterval(slideInterval);
-    }, []);
+    }, [
+        currSlide,
+        isManual
+    ]);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "relative w-[100vw] overflow-hidden",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: " flex transition-transform ease-out duration-500",
+                className: "flex transition-transform ease-out duration-500",
                 style: {
                     transform: `translateX(-${currSlide * 100}%)`
                 },
                 children: slides
             }, void 0, false, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 14,
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35019,17 +35175,17 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                                 points: "15 18 9 12 15 6"
                             }, void 0, false, {
                                 fileName: "src/components/Carousel.js",
-                                lineNumber: 17,
-                                columnNumber: 21
+                                lineNumber: 39,
+                                columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Carousel.js",
-                            lineNumber: 16,
-                            columnNumber: 133
+                            lineNumber: 38,
+                            columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Carousel.js",
-                        lineNumber: 16,
+                        lineNumber: 37,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35049,23 +35205,23 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                                 points: "9 18 15 12 9 6"
                             }, void 0, false, {
                                 fileName: "src/components/Carousel.js",
-                                lineNumber: 21,
-                                columnNumber: 21
+                                lineNumber: 44,
+                                columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Carousel.js",
-                            lineNumber: 20,
-                            columnNumber: 133
+                            lineNumber: 43,
+                            columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Carousel.js",
-                        lineNumber: 20,
+                        lineNumber: 42,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 15,
+                lineNumber: 36,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35074,29 +35230,29 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 300
                     className: "flex items-center justify-center gap-2",
                     children: slides.map((_, i)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: `transition-all w-3 h-3 bg-white rounded-full ${currSlide === i ? "p-2" : "bg-opacity-50"}`
-                        }, void 0, false, {
+                        }, i, false, {
                             fileName: "src/components/Carousel.js",
-                            lineNumber: 28,
+                            lineNumber: 51,
                             columnNumber: 25
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/components/Carousel.js",
-                    lineNumber: 26,
+                    lineNumber: 49,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Carousel.js",
-                lineNumber: 25,
+                lineNumber: 48,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Carousel.js",
-        lineNumber: 13,
+        lineNumber: 32,
         columnNumber: 9
     }, undefined);
 };
-_s(Carousel, "yPEO2+dW1ToyyNUr16iXROUDyew=");
+_s(Carousel, "/07Qss9yEWodvpflYrzqE6+Y98g=");
 _c = Carousel;
 exports.default = Carousel;
 var _c;
@@ -35107,18 +35263,228 @@ $RefreshReg$(_c, "Carousel");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"78kaM":[function(require,module,exports) {
-module.exports = require("2f279e65206290d7").getBundleURL("1G2bZ") + "img1.f05a4ee2.jpg" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8PPxH":[function(require,module,exports) {
+module.exports = require("5c43b7b9673b3625").getBundleURL("1G2bZ") + "img1.38381241.jpg" + "?" + Date.now();
 
-},{"2f279e65206290d7":"lgJ39"}],"4YYWd":[function(require,module,exports) {
-module.exports = require("ce83a5b0fbaf969e").getBundleURL("1G2bZ") + "img2.430268e0.jpg" + "?" + Date.now();
+},{"5c43b7b9673b3625":"lgJ39"}],"4Hr2y":[function(require,module,exports) {
+module.exports = require("788ccee41d8604fd").getBundleURL("1G2bZ") + "img2.f53bee19.jpg" + "?" + Date.now();
 
-},{"ce83a5b0fbaf969e":"lgJ39"}],"8y4LZ":[function(require,module,exports) {
-module.exports = require("abafbe1b8b314abd").getBundleURL("1G2bZ") + "img3.f9ded1b4.jpg" + "?" + Date.now();
+},{"788ccee41d8604fd":"lgJ39"}],"fUvhd":[function(require,module,exports) {
+module.exports = require("1df3e7736fec72b1").getBundleURL("1G2bZ") + "img3.5a2e49a4.jpg" + "?" + Date.now();
 
-},{"abafbe1b8b314abd":"lgJ39"}],"7drGN":[function(require,module,exports) {
-module.exports = require("dbd359044fd18a7f").getBundleURL("1G2bZ") + "img4.c2194ce0.jpg" + "?" + Date.now();
+},{"1df3e7736fec72b1":"lgJ39"}],"f7XRq":[function(require,module,exports) {
+module.exports = require("bc2965a07aff4b68").getBundleURL("1G2bZ") + "img4.8420d17f.jpg" + "?" + Date.now();
 
-},{"dbd359044fd18a7f":"lgJ39"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
+},{"bc2965a07aff4b68":"lgJ39"}],"9rJEe":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1709 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1709.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _streeAvif = require("../assets/stree.avif");
+var _streeAvifDefault = parcelHelpers.interopDefault(_streeAvif);
+var _vedaAvif = require("../assets/veda.avif");
+var _vedaAvifDefault = parcelHelpers.interopDefault(_vedaAvif);
+var _kkmAvif = require("../assets/kkm.avif");
+var _kkmAvifDefault = parcelHelpers.interopDefault(_kkmAvif);
+var _alienAvif = require("../assets/alien.avif");
+var _alienAvifDefault = parcelHelpers.interopDefault(_alienAvif);
+var _harlodAvif = require("../assets/harlod.avif");
+var _harlodAvifDefault = parcelHelpers.interopDefault(_harlodAvif);
+const posterImage = "/path/to/uploaded/image.png";
+const movies = [
+    {
+        title: "Khel Khel Mein",
+        genre: "Comedy/Drama",
+        rating: 8.2,
+        votes: "35K Votes",
+        imageUrl: (0, _kkmAvifDefault.default)
+    },
+    {
+        title: "Stree 2: Sarkate Ka Aatank",
+        genre: "Comedy/Horror",
+        rating: 9,
+        votes: "190.1K Votes",
+        imageUrl: (0, _streeAvifDefault.default)
+    },
+    {
+        title: "Alien: Romulus",
+        genre: "Horror/Sci-Fi/Thriller",
+        rating: 8.3,
+        votes: "1.3K Votes",
+        imageUrl: (0, _alienAvifDefault.default)
+    },
+    {
+        title: "Vedaa",
+        genre: "Action/Drama",
+        rating: 8.1,
+        votes: "33.8K Votes",
+        imageUrl: (0, _vedaAvifDefault.default)
+    },
+    {
+        title: "Harold and the Purple Crayon",
+        genre: "Action/Adventure/Fantasy",
+        rating: 7.3,
+        votes: "628 Votes",
+        imageUrl: (0, _harlodAvifDefault.default)
+    },
+    {
+        title: "Khel Khel Mein",
+        genre: "Comedy/Drama",
+        rating: 8.2,
+        votes: "35K Votes",
+        imageUrl: (0, _kkmAvifDefault.default)
+    },
+    {
+        title: "Stree 2: Sarkate Ka Aatank",
+        genre: "Comedy/Horror",
+        rating: 9,
+        votes: "190.1K Votes",
+        imageUrl: (0, _streeAvifDefault.default)
+    },
+    {
+        title: "Alien: Romulus",
+        genre: "Horror/Sci-Fi/Thriller",
+        rating: 8.3,
+        votes: "1.3K Votes",
+        imageUrl: (0, _alienAvifDefault.default)
+    },
+    {
+        title: "Vedaa",
+        genre: "Action/Drama",
+        rating: 8.1,
+        votes: "33.8K Votes",
+        imageUrl: (0, _vedaAvifDefault.default)
+    },
+    {
+        title: "Harold and the Purple Crayon",
+        genre: "Action/Adventure/Fantasy",
+        rating: 7.3,
+        votes: "628 Votes",
+        imageUrl: (0, _harlodAvifDefault.default)
+    }
+];
+const MovieCard = ({ movie })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "bg-[#171921] rounded-lg shadow-lg overflow-hidden w-[18.1%] m-[0.9%] h-auto",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: movie.imageUrl,
+                alt: movie.title,
+                className: "w-full object-cover "
+            }, void 0, false, {
+                fileName: "src/components/Cards.js",
+                lineNumber: 85,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "p-4",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "font-bold text-lg text-white",
+                        children: movie.title
+                    }, void 0, false, {
+                        fileName: "src/components/Cards.js",
+                        lineNumber: 87,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "text-gray-400",
+                        children: movie.genre
+                    }, void 0, false, {
+                        fileName: "src/components/Cards.js",
+                        lineNumber: 88,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex items-center text-sm mt-2",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "text-green-500",
+                                children: [
+                                    "\u2B50 ",
+                                    movie.rating,
+                                    "/10"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Cards.js",
+                                lineNumber: 90,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "ml-2 text-gray-600",
+                                children: movie.votes
+                            }, void 0, false, {
+                                fileName: "src/components/Cards.js",
+                                lineNumber: 91,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Cards.js",
+                        lineNumber: 89,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Cards.js",
+                lineNumber: 86,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Cards.js",
+        lineNumber: 84,
+        columnNumber: 9
+    }, undefined);
+};
+_c = MovieCard;
+const MovieList = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-wrap overflow-hidden w-[100vw] p-[1%]",
+        children: movies.map((movie, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MovieCard, {
+                movie: movie
+            }, index, false, {
+                fileName: "src/components/Cards.js",
+                lineNumber: 102,
+                columnNumber: 17
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/components/Cards.js",
+        lineNumber: 100,
+        columnNumber: 9
+    }, undefined);
+};
+_c1 = MovieList;
+exports.default = MovieList;
+var _c, _c1;
+$RefreshReg$(_c, "MovieCard");
+$RefreshReg$(_c1, "MovieList");
+
+  $parcel$ReactRefreshHelpers$1709.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../assets/veda.avif":"443AJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/kkm.avif":"f9WnC","../assets/alien.avif":"6uJqB","../assets/stree.avif":"5HylO","../assets/harlod.avif":"jPiRt"}],"443AJ":[function(require,module,exports) {
+module.exports = require("edb2c56f10905674").getBundleURL("1G2bZ") + "veda.6494f5d8.avif" + "?" + Date.now();
+
+},{"edb2c56f10905674":"lgJ39"}],"f9WnC":[function(require,module,exports) {
+module.exports = require("bbdcdbeb0a81e56f").getBundleURL("1G2bZ") + "kkm.99972bb4.avif" + "?" + Date.now();
+
+},{"bbdcdbeb0a81e56f":"lgJ39"}],"6uJqB":[function(require,module,exports) {
+module.exports = require("870360ec15d6109c").getBundleURL("1G2bZ") + "alien.e2aef41b.avif" + "?" + Date.now();
+
+},{"870360ec15d6109c":"lgJ39"}],"5HylO":[function(require,module,exports) {
+module.exports = require("e8e66694cbe31c79").getBundleURL("1G2bZ") + "stree.b74823de.avif" + "?" + Date.now();
+
+},{"e8e66694cbe31c79":"lgJ39"}],"jPiRt":[function(require,module,exports) {
+module.exports = require("71b004c8c57993e4").getBundleURL("1G2bZ") + "harlod.832f2de6.avif" + "?" + Date.now();
+
+},{"71b004c8c57993e4":"lgJ39"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
 
 //# sourceMappingURL=index.5baa4167.js.map
