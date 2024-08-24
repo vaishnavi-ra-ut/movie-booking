@@ -97,7 +97,7 @@ button, select {
 }
 
 button, input:where([type="button"]), input:where([type="reset"]), input:where([type="submit"]) {
-  -webkit-appearance: button;
+  /* -webkit-appearance: button; */
   background-color: #0000;
   background-image: none;
 }
@@ -123,7 +123,7 @@ progress {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield;
+  /* -webkit-appearance: textfield; */
   outline-offset: -2px;
 }
 
@@ -181,7 +181,7 @@ button, [role="button"] {
 }
 
 img, svg, video, canvas, audio, iframe, embed, object {
-  vertical-align: middle;
+
   display: block;
 }
 
@@ -260,8 +260,32 @@ img, video {
   position: relative;
 }
 
+.inset-10 {
+  inset: 2.5rem;
+}
+
+.inset-7 {
+  inset: 1.75rem;
+}
+
+.inset-5 {
+  inset: 1.25rem;
+}
+
+.inset-4 {
+  inset: 1rem;
+}
+
+.inset-8 {
+  inset: 2rem;
+}
+
 .inset-9 {
   inset: 2.25rem;
+}
+
+.inset-3 {
+  inset: .75rem;
 }
 
 .inset-y-0 {
@@ -279,6 +303,10 @@ img, video {
 
 .right-0 {
   right: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .-m-2 {
@@ -502,11 +530,6 @@ img, video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-gray-800 {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -527,10 +550,6 @@ img, video {
 
 .opacity-70 {
   opacity: .7;
-}
-
-.opacity-80 {
-  opacity: .8;
 }
 
 .shadow {
