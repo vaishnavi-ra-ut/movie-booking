@@ -17,7 +17,7 @@ const Body = () => {
                     {slides.map((slide) => <img className="h-[75vh] w-[96%] mx-[2%] mt-[2%] rounded-lg"
                         src={slide} />)}</Carousel>
             </div>
-            <h3 className="text-gray-300 ml-7 mt-2 -mb-2 font-semibold text-3xl font-serif">
+            <h3 className="text-gray-300 ml-8 mb-1 mt-5 font-semibold text-3xl font-serif">
                 Latest Movies Near You
             </h3>
             <div>

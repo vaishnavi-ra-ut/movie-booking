@@ -29,11 +29,11 @@ const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 400
     }, [currSlide, isManual]);
 
     return (
-        <div className="relative w-[100vw] overflow-hidden">
+        <div className="relative w-[100vw] overflow-hidden p-2 -mt-4">
             <div className="flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${currSlide * 100}%)` }}>
                 {slides}
             </div>
-            <div className="absolute inset-8 flex items-center justify-between p-4">
+            <div className="absolute inset-8 flex items-center justify-between p-3">
                 <button onClick={prevSlide} className="p-2 rounded-full shadow bg-white/80 opacity-70 text-gray-900 hover:bg-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="15 18 9 12 15 6"></polyline>
