@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"hPIHA":[function(require,module,exports) {
+})({"gpvlO":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -34530,90 +34530,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Searchbar":"kZ65z","../assets/logo.png":"b04ZD","./Profile":"h0rtF","./Location":"iC1pF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZ65z":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0d82.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const SearchBar = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex items-center justify-center h-screen",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "relative group",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                    type: "text",
-                    placeholder: "Search...",
-                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-2 opacity-0 group-hover:opacity-60 focus:opacity-100"
-                }, void 0, false, {
-                    fileName: "src/components/Searchbar.js",
-                    lineNumber: 7,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    className: "absolute inset-y-0 right-0  flex items-center pr-2",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        viewBox: "0 0 24 24",
-                        fill: "#ffffff",
-                        className: " opacity-70 pr-2 h-12 w-12 mr-1",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                d: "M0 0h24v24H0z",
-                                fill: "none"
-                            }, void 0, false, {
-                                fileName: "src/components/Searchbar.js",
-                                lineNumber: 18,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 6.42 13.58 4 10.5 4S5 6.42 5 9.5 7.42 15 10.5 15c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49l-4.24-4.25zM10.5 13C8.57 13 7 11.43 7 9.5S8.57 6 10.5 6 14 7.57 14 9.5 12.43 13 10.5 13z"
-                            }, void 0, false, {
-                                fileName: "src/components/Searchbar.js",
-                                lineNumber: 19,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Searchbar.js",
-                        lineNumber: 12,
-                        columnNumber: 11
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/Searchbar.js",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Searchbar.js",
-            lineNumber: 6,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Searchbar.js",
-        lineNumber: 5,
-        columnNumber: 5
-    }, undefined);
-};
-_c = SearchBar;
-exports.default = SearchBar;
-var _c;
-$RefreshReg$(_c, "SearchBar");
-
-  $parcel$ReactRefreshHelpers$0d82.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Searchbar":"kZ65z","../assets/logo.png":"b04ZD","./Profile":"h0rtF","./Location":"iC1pF"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
@@ -34751,7 +34668,90 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"b04ZD":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"kZ65z":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0d82.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const SearchBar = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex items-center justify-center h-screen",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "relative group",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text",
+                    placeholder: "Search...",
+                    className: "mr-4 w-0 group-hover:w-96 transition-all duration-300 bg-gray-400 text-black placeholder-gray-900 rounded-full pl-4 py-2 opacity-0 group-hover:opacity-60 focus:opacity-100"
+                }, void 0, false, {
+                    fileName: "src/components/Searchbar.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    className: "absolute inset-y-0 right-0  flex items-center pr-2",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                        xmlns: "http://www.w3.org/2000/svg",
+                        viewBox: "0 0 24 24",
+                        fill: "#ffffff",
+                        className: " opacity-70 pr-2 h-12 w-12 mr-1",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M0 0h24v24H0z",
+                                fill: "none"
+                            }, void 0, false, {
+                                fileName: "src/components/Searchbar.js",
+                                lineNumber: 18,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 6.42 13.58 4 10.5 4S5 6.42 5 9.5 7.42 15 10.5 15c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49l-4.24-4.25zM10.5 13C8.57 13 7 11.43 7 9.5S8.57 6 10.5 6 14 7.57 14 9.5 12.43 13 10.5 13z"
+                            }, void 0, false, {
+                                fileName: "src/components/Searchbar.js",
+                                lineNumber: 19,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Searchbar.js",
+                        lineNumber: 12,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Searchbar.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Searchbar.js",
+            lineNumber: 6,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Searchbar.js",
+        lineNumber: 5,
+        columnNumber: 5
+    }, undefined);
+};
+_c = SearchBar;
+exports.default = SearchBar;
+var _c;
+$RefreshReg$(_c, "SearchBar");
+
+  $parcel$ReactRefreshHelpers$0d82.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"b04ZD":[function(require,module,exports) {
 module.exports = require("185424d48c478371").getBundleURL("1G2bZ") + "logo.73091252.png" + "?" + Date.now();
 
 },{"185424d48c478371":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -35106,7 +35106,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Carousel":"eWA0I","../assets/images/img1.jpg":"8PPxH","../assets/images/img2.jpg":"4Hr2y","../assets/images/img3.jpg":"fUvhd","../assets/images/img4.jpg":"f7XRq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../components/Cards":"9rJEe"}],"eWA0I":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Carousel":"eWA0I","../assets/images/img1.jpg":"8PPxH","../assets/images/img2.jpg":"4Hr2y","../assets/images/img3.jpg":"fUvhd","../assets/images/img4.jpg":"f7XRq","../components/Cards":"9rJEe"}],"eWA0I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fec5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35263,7 +35263,7 @@ $RefreshReg$(_c, "Carousel");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8PPxH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"8PPxH":[function(require,module,exports) {
 module.exports = require("5c43b7b9673b3625").getBundleURL("1G2bZ") + "img1.38381241.jpg" + "?" + Date.now();
 
 },{"5c43b7b9673b3625":"lgJ39"}],"4Hr2y":[function(require,module,exports) {
@@ -35470,7 +35470,10 @@ $RefreshReg$(_c1, "MovieList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../assets/veda.avif":"443AJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/kkm.avif":"f9WnC","../assets/alien.avif":"6uJqB","../assets/stree.avif":"5HylO","../assets/harlod.avif":"jPiRt"}],"443AJ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../assets/stree.avif":"5HylO","../assets/veda.avif":"443AJ","../assets/kkm.avif":"f9WnC","../assets/alien.avif":"6uJqB","../assets/harlod.avif":"jPiRt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5HylO":[function(require,module,exports) {
+module.exports = require("e8e66694cbe31c79").getBundleURL("1G2bZ") + "stree.b74823de.avif" + "?" + Date.now();
+
+},{"e8e66694cbe31c79":"lgJ39"}],"443AJ":[function(require,module,exports) {
 module.exports = require("edb2c56f10905674").getBundleURL("1G2bZ") + "veda.6494f5d8.avif" + "?" + Date.now();
 
 },{"edb2c56f10905674":"lgJ39"}],"f9WnC":[function(require,module,exports) {
@@ -35479,12 +35482,9 @@ module.exports = require("bbdcdbeb0a81e56f").getBundleURL("1G2bZ") + "kkm.99972b
 },{"bbdcdbeb0a81e56f":"lgJ39"}],"6uJqB":[function(require,module,exports) {
 module.exports = require("870360ec15d6109c").getBundleURL("1G2bZ") + "alien.e2aef41b.avif" + "?" + Date.now();
 
-},{"870360ec15d6109c":"lgJ39"}],"5HylO":[function(require,module,exports) {
-module.exports = require("e8e66694cbe31c79").getBundleURL("1G2bZ") + "stree.b74823de.avif" + "?" + Date.now();
-
-},{"e8e66694cbe31c79":"lgJ39"}],"jPiRt":[function(require,module,exports) {
+},{"870360ec15d6109c":"lgJ39"}],"jPiRt":[function(require,module,exports) {
 module.exports = require("71b004c8c57993e4").getBundleURL("1G2bZ") + "harlod.832f2de6.avif" + "?" + Date.now();
 
-},{"71b004c8c57993e4":"lgJ39"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
+},{"71b004c8c57993e4":"lgJ39"}]},["gpvlO","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
 
 //# sourceMappingURL=index.5baa4167.js.map
