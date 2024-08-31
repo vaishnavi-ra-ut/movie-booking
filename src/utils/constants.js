@@ -1,0 +1,1 @@
+export const FETCH_URL = "https://in.bookmyshow.com/api/seo/v1/footer?url=/";
