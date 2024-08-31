@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-export function ProfileMenu() {
+export function ProfileMenu({ isMobile = false }) {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -23,7 +23,10 @@ export function ProfileMenu() {
   }, []);
 
   return (
-    <div className="relative" ref={menuRef}>
+    <div
+      className={`relative ${isOpen ? 'z-50' : ''}`}
+      ref={menuRef}
+    >
       <svg
         onClick={toggleMenu}
         xmlns="http://www.w3.org/2000/svg"
@@ -37,29 +40,27 @@ export function ProfileMenu() {
         />
       </svg>
 
+      {/* Dropdown Menu */}
       <div
-        className={`absolute right-0 mt-2 w-48 bg-gray-200 border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${isOpen ? "opacity-90 scale-100" : "opacity-0 scale-95 pointer-events-none"
-          }`}
+        className={`absolute ${
+          isMobile ? 'right-0' : 'left-0'
+        } mt-4 -ml-[77px] w-28 grid place-items-center bg-gray-950  border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${
+          isOpen ? "opacity-90 scale-100" : "opacity-0 scale-95 pointer-events-none"
+        }`}
       >
-        <a
-          href="#"
-          className="block px-4 py-2 text-black hover:bg-gray-200"
-        >
+        <a href="#" className="block px-4 py-2 text-gray-400 hover:bg-gray-800">
           Profile
         </a>
-        <a
-          href="#"
-          className="block px-4 py-2 text-black hover:bg-gray-200"
-        >
+        <a href="#" className="block px-4 py-2 text-gray-400 hover:bg-gray-800">
           Settings
         </a>
-        <a
-          href="#"
-          className="block px-4 py-2 text-black hover:bg-gray-200"
-        >
+        <a href="#" className="block px-4 py-2 text-gray-400 hover:bg-gray-800">
           Logout
         </a>
       </div>
     </div>
   );
 }
+
+
+

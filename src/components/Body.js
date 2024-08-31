@@ -11,10 +11,10 @@ const slides = [
 const Body = () => {
 
     return (
-        <div className="body w-[100vw] h-[80vh] -m-2">
+        <div className="body w-[100vw] h-[80vh] -m-2 ">
             <div className="h-[80vh]">
                 <Carousel autoSlide={true} autoSlideInterval={3000}>
-                    {slides.map((slide) => <img className="h-[75vh] w-[96%] mx-[2%] mt-[2%] rounded-lg"
+                    {slides.map((slide) => <img className="h-[75vh] w-[96%] mx-[2%] mt-[2%] rounded-lg object-contain "
                         src={slide} />)}</Carousel>
             </div>
             <h3 className="text-gray-300 ml-8 mb-1 mt-5 font-semibold text-3xl font-serif">

@@ -4,7 +4,6 @@ import kkm from "../assets/kkm.avif"
 import alien from "../assets/alien.avif"
 import harlod from "../assets/harlod.avif"
 import { Link } from "react-router-dom";
-import Info from "./Info"
 
 const movies = [
     {
@@ -108,4 +107,4 @@ const MovieList = () => {
     );
 };
 
-export default MovieList;
+export default MovieList

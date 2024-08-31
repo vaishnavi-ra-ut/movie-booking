@@ -50,23 +50,23 @@ const Location = () => {
   }, [dropdownRef]);
 
   return (
-    <div className="relative -mr-3" ref={dropdownRef}>
+    <div className="relative" ref={dropdownRef}>
       <input
         type="text"
         value={searchTerm}
         onChange={handleSearchChange}
         onClick={toggleDropdown}
-        placeholder="Location "
-        className="w-full p-2 mt-1 -mr-1 h-7 text-gray-300 bg-gray-200 bg-opacity-20 border border-gray-400 rounded-lg"
+        placeholder="Location"
+        className="w-full px-2 h-8 text-white bg-gray-950 border border-gray-400 rounded-full focus:outline-none focus:border-blue-500"
       />
       {showDropdown && (
-        <ul className="absolute w-full mt-1 bg-gray-200 bg-opacity-90 border rounded-lg shadow-lg z-20">
+        <ul className="absolute w-full max-h-40 mt-1 overflow-y-auto text-gray-400 bg-gray-900 opacity-96 border border-gray-300 rounded-xl shadow-lg z-20">
           {filteredLocations.length > 0 ? (
             filteredLocations.map((location, index) => (
               <li
                 key={index}
                 onClick={() => handleLocationSelect(location)}
-                className="px-4 py-2 cursor-pointer hover:bg-gray-300"
+                className="px-4 py-2 cursor-pointer hover:bg-blue-100"
               >
                 {location}
               </li>
@@ -81,4 +81,5 @@ const Location = () => {
 };
 
 export default Location;
+
 
