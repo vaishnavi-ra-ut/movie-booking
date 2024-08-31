@@ -34462,7 +34462,7 @@ const Header = ()=>{
         setIsMenuOpen(!isMenuOpen);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: "bg-black w-full mt-[2%] -mb-[2%] flex items-center justify-between pl-[1.5%] pr-[0.4%] h-6",
+        className: "bg-black w-full flex items-center justify-between p-4 -mb-[4%]",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                 to: "/",
@@ -34549,7 +34549,7 @@ const Header = ()=>{
                     isMenuOpen && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "absolute top-16 right-1 w-[50vw] bg-black text-white rounded-md shadow-lg z-20",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "p-4 space-y-3 -mt-4 -mr-3 ml-9",
+                            className: "p-4 space-y-3",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationDefault.default), {}, void 0, false, {
                                     fileName: "src/components/Header.js",
@@ -34588,7 +34588,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "hidden lg:flex items-center space-x-3 ",
+                className: "hidden lg:flex items-center space-x-3",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationDefault.default), {}, void 0, false, {
                         fileName: "src/components/Header.js",
