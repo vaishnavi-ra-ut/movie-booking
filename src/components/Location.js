@@ -57,7 +57,7 @@ const Location = () => {
         onChange={handleSearchChange}
         onClick={toggleDropdown}
         placeholder="Location "
-        className="w-full p-2 mt-1 -mr-1 h-9 text-black bg-gray-200 bg-opacity-20 border rounded-lg"
+        className="w-full p-2 mt-1 -mr-1 h-7 text-gray-300 bg-gray-200 bg-opacity-20 border border-gray-400 rounded-lg"
       />
       {showDropdown && (
         <ul className="absolute w-full mt-1 bg-gray-200 bg-opacity-90 border rounded-lg shadow-lg z-20">

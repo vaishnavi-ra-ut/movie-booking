@@ -3,8 +3,8 @@ import veda from "../assets/veda.avif"
 import kkm from "../assets/kkm.avif"
 import alien from "../assets/alien.avif"
 import harlod from "../assets/harlod.avif"
-
-const posterImage = '/path/to/uploaded/image.png';
+import { Link } from "react-router-dom";
+import Info from "./Info"
 
 const movies = [
     {
@@ -78,26 +78,29 @@ const movies = [
         imageUrl: harlod
     },
 ];
-
+{/*  w-[18.1%] m-[0.9%] */}
 const MovieCard = ({ movie }) => {
     return (
-        <div className="bg-[#171921] rounded-lg shadow-lg overflow-hidden w-[18.1%] m-[0.9%] h-auto">
-            <img src={movie.imageUrl} alt={movie.title} className="w-full object-cover "/>
-            <div className="p-4">
-                <div className="font-bold text-lg text-white">{movie.title}</div>
-                <div className="text-gray-400">{movie.genre}</div>
-                <div className="flex items-center text-sm mt-2">
-                    <span className="text-green-500">⭐ {movie.rating}/10</span>
-                    <span className="ml-2 text-gray-600">{movie.votes}</span>
+        <Link to="/info">
+                <div className="bg-[#171921] rounded-lg shadow-lg overflow-hidden w-[13.80rem] mx-[0.78rem] my-3 
+                h-[31rem]">
+                    <img src={movie.imageUrl} alt={movie.title} className="w-full object-cover "/>
+                    <div className="p-4">
+                        <div className="font-bold text-lg text-white">{movie.title}</div>
+                        <div className="text-gray-400">{movie.genre}</div>
+                            <div className="flex items-center text-sm mt-2">
+                            {/* <span className="text-green-500">⭐ {movie.rating}/10</span> */}
+                            <span className="ml-2 text-gray-600">{movie.votes}</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+        </Link>
     );
 };
 
 const MovieList = () => {
     return (
-        <div className="flex flex-wrap overflow-hidden w-[100vw] p-[1%]">
+        <div className="flex flex-wrap overflow-hidden w-[100vw] p-[2%] pt-2">
             {movies.map((movie, index) => (
                 <MovieCard key={index} movie={movie} />
             ))}
