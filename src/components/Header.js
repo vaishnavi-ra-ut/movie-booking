@@ -13,8 +13,8 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black w-full mt-[2%] -mb-[2%] flex items-center justify-between pl-[1.5%] pr-[0.4%] h-6">
-      {/* Responsive Logo */}
+    <header className="bg-black w-full flex items-center justify-between p-4 -mb-[4%]">
+      {/* Logo */}
       <Link to="/" className="flex-shrink-0">
         <img
           src={logo}
@@ -63,7 +63,7 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="absolute top-16 right-1 w-[50vw] bg-black text-white rounded-md shadow-lg z-20">
-            <div className="p-4 space-y-3 -mt-4 -mr-3 ml-9">
+            <div className="p-4 space-y-3">
               {/* Location component */}
               <Location />
               {/* ProfileMenu aligned to the right */}
@@ -76,7 +76,7 @@ const Header = () => {
       </div>
 
       {/* Menu Items for Larger Screens */}
-      <div className="hidden lg:flex items-center space-x-3 ">
+      <div className="hidden lg:flex items-center space-x-3">
         <Location />
         <ProfileMenu />
       </div>
