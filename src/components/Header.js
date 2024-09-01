@@ -24,7 +24,7 @@ const Header = () => {
       </Link>
 
       {/* Search Bar */}
-      <div className="flex-grow max-w-xl mx-4">
+      <div className="flex-grow max-w-[50%] mx-4">
         <SearchBar />
       </div>
 
