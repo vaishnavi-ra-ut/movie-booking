@@ -34462,14 +34462,14 @@ const Header = ()=>{
         setIsMenuOpen(!isMenuOpen);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: "bg-black w-full flex items-center justify-between p-4 -mb-[4%]",
+        className: "bg-black w-[100vw] flex items-center justify-between px-[2vw] py-[1vh] -mb-[4%]",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                 to: "/",
                 className: "flex-shrink-0",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                     src: (0, _logoPngDefault.default),
-                    className: "h-8 md:h-10 lg:h-12 w-auto",
+                    className: "h-[8vh] w-[15vw]",
                     alt: "Logo"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
@@ -34482,7 +34482,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex-grow max-w-xl mx-4",
+                className: "flex-grow max-w-[50%] mx-4",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchbarDefault.default), {}, void 0, false, {
                     fileName: "src/components/Header.js",
                     lineNumber: 28,
@@ -34624,7 +34624,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Searchbar":"kZ65z","../assets/logo.png":"b04ZD","./Profile":"h0rtF","./Location":"iC1pF","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}],"kZ65z":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Searchbar":"kZ65z","../assets/logo.png":"b04ZD","./Profile":"h0rtF","./Location":"iC1pF","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kZ65z":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0d82 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35005,25 +35005,98 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$6828.prelude(module);
 
 try {
+// import React, { useState, useEffect, useRef } from "react";
+// const Location = () => {
+//   const [searchTerm, setSearchTerm] = useState("");
+//   const [showDropdown, setShowDropdown] = useState(false);
+//   const dropdownRef = useRef(null);
+//   const locations = [
+//     "Bhopal",
+//     "Delhi",
+//     "hyderabad",
+//     "rewa",
+//     "chindwara",
+//     "jaipur",
+//     "Nagpur",
+//     "San Diego",
+//     "Dallas",
+//     "San Jose",
+//   ];
+//   const filteredLocations = locations.filter((location) =>
+//     location.toLowerCase().includes(searchTerm.toLowerCase())
+//   );
+//   const handleSearchChange = (e) => {
+//     setSearchTerm(e.target.value);
+//   };
+//   const toggleDropdown = () => {
+//     setShowDropdown(!showDropdown);
+//   };
+//   const handleLocationSelect = (location) => {
+//     setSearchTerm(location);
+//     setShowDropdown(false);
+//   };
+//   // Effect to close the dropdown when clicking outside
+//   useEffect(() => {
+//     const handleClickOutside = (event) => {
+//       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+//         setShowDropdown(false);
+//       }
+//     };
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => {
+//       document.removeEventListener("mousedown", handleClickOutside);
+//     };
+//   }, [dropdownRef]);
+//   return (
+//     <div className="relative" ref={dropdownRef}>
+//       <input
+//         type="text"
+//         value={searchTerm}
+//         onChange={handleSearchChange}
+//         onClick={toggleDropdown}
+//         placeholder="Location"
+//         className="w-full px-2 h-8 text-white bg-gray-950 border border-gray-400 rounded-full focus:outline-none focus:border-blue-500"
+//       />
+//       {showDropdown && (
+//         <ul className="absolute w-full max-h-40 mt-1 overflow-y-auto text-gray-400 bg-gray-900 opacity-96 border border-gray-300 rounded-xl shadow-lg z-20">
+//           {filteredLocations.length > 0 ? (
+//             filteredLocations.map((location, index) => (
+//               <li
+//                 key={index}
+//                 onClick={() => handleLocationSelect(location)}
+//                 className="px-4 py-2 cursor-pointer hover:bg-blue-100"
+//               >
+//                 {location}
+//               </li>
+//             ))
+//           ) : (
+//             <li className="px-4 py-2 text-gray-500">No locations found</li>
+//           )}
+//         </ul>
+//       )}
+//     </div>
+//   );
+// };
+// export default Location;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
-const Location = ()=>{
+const Location = ({ setLocation })=>{
     _s();
     const [searchTerm, setSearchTerm] = (0, _react.useState)("");
     const [showDropdown, setShowDropdown] = (0, _react.useState)(false);
     const dropdownRef = (0, _react.useRef)(null);
     const locations = [
-        "New York",
-        "Los Angeles",
-        "Chicago",
-        "Houston",
-        "Phoenix",
-        "Philadelphia",
-        "San Antonio",
+        "Bhopal",
+        "Delhi",
+        "Hyderabad",
+        "Rewa",
+        "Chindwara",
+        "Jaipur",
+        "Nagpur",
         "San Diego",
         "Dallas",
         "San Jose"
@@ -35038,8 +35111,8 @@ const Location = ()=>{
     const handleLocationSelect = (location)=>{
         setSearchTerm(location);
         setShowDropdown(false);
+        setLocation(location); // Update the location in the Movies component
     };
-    // Effect to close the dropdown when clicking outside
     (0, _react.useEffect)(()=>{
         const handleClickOutside = (event)=>{
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) setShowDropdown(false);
@@ -35064,7 +35137,7 @@ const Location = ()=>{
                 className: "w-full px-2 h-8 text-white bg-gray-950 border border-gray-400 rounded-full focus:outline-none focus:border-blue-500"
             }, void 0, false, {
                 fileName: "src/components/Location.js",
-                lineNumber: 54,
+                lineNumber: 137,
                 columnNumber: 7
             }, undefined),
             showDropdown && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -35075,25 +35148,25 @@ const Location = ()=>{
                         children: location
                     }, index, false, {
                         fileName: "src/components/Location.js",
-                        lineNumber: 66,
+                        lineNumber: 149,
                         columnNumber: 15
                     }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     className: "px-4 py-2 text-gray-500",
                     children: "No locations found"
                 }, void 0, false, {
                     fileName: "src/components/Location.js",
-                    lineNumber: 75,
+                    lineNumber: 158,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Location.js",
-                lineNumber: 63,
+                lineNumber: 146,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Location.js",
-        lineNumber: 53,
+        lineNumber: 136,
         columnNumber: 5
     }, undefined);
 };
@@ -35128,8 +35201,6 @@ var _img3Jpg = require("../assets/images/img3.jpg");
 var _img3JpgDefault = parcelHelpers.interopDefault(_img3Jpg);
 var _img4Jpg = require("../assets/images/img4.jpg");
 var _img4JpgDefault = parcelHelpers.interopDefault(_img4Jpg);
-var _cards = require("../components/Cards");
-var _cardsDefault = parcelHelpers.interopDefault(_cards);
 var _react = require("react");
 var _movies = require("./Movies");
 var _moviesDefault = parcelHelpers.interopDefault(_movies);
@@ -35153,36 +35224,17 @@ const Body = ()=>{
                             src: slide
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 19,
+                            lineNumber: 18,
                             columnNumber: 44
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 18,
+                    lineNumber: 17,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 17,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                className: "text-gray-300 ml-8 mb-1 mt-5 font-semibold text-3xl font-serif",
-                children: "Latest Movies Near You"
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 22,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cardsDefault.default), {}, void 0, false, {
-                    fileName: "src/components/Body.js",
-                    lineNumber: 26,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 25,
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35190,19 +35242,19 @@ const Body = ()=>{
                     "movies",
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _moviesDefault.default), {}, void 0, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 30,
+                        lineNumber: 23,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 28,
+                lineNumber: 21,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 16,
+        lineNumber: 15,
         columnNumber: 9
     }, undefined);
 };
@@ -35216,7 +35268,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Carousel":"eWA0I","../assets/images/img1.jpg":"8PPxH","../assets/images/img2.jpg":"4Hr2y","../assets/images/img3.jpg":"fUvhd","../assets/images/img4.jpg":"f7XRq","../components/Cards":"9rJEe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Movies":"7t9SE"}],"eWA0I":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Carousel":"eWA0I","../assets/images/img1.jpg":"8PPxH","../assets/images/img2.jpg":"4Hr2y","../assets/images/img3.jpg":"fUvhd","../assets/images/img4.jpg":"f7XRq","react":"21dqq","./Movies":"7t9SE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eWA0I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fec5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35378,216 +35430,40 @@ module.exports = require("1df3e7736fec72b1").getBundleURL("1G2bZ") + "img3.5a2e4
 },{"1df3e7736fec72b1":"lgJ39"}],"f7XRq":[function(require,module,exports) {
 module.exports = require("bc2965a07aff4b68").getBundleURL("1G2bZ") + "img4.8420d17f.jpg" + "?" + Date.now();
 
-},{"bc2965a07aff4b68":"lgJ39"}],"9rJEe":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1709 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1709.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _streeAvif = require("../assets/stree.avif");
-var _streeAvifDefault = parcelHelpers.interopDefault(_streeAvif);
-var _vedaAvif = require("../assets/veda.avif");
-var _vedaAvifDefault = parcelHelpers.interopDefault(_vedaAvif);
-var _kkmAvif = require("../assets/kkm.avif");
-var _kkmAvifDefault = parcelHelpers.interopDefault(_kkmAvif);
-var _alienAvif = require("../assets/alien.avif");
-var _alienAvifDefault = parcelHelpers.interopDefault(_alienAvif);
-var _harlodAvif = require("../assets/harlod.avif");
-var _harlodAvifDefault = parcelHelpers.interopDefault(_harlodAvif);
-var _reactRouterDom = require("react-router-dom");
-const movies = [
-    {
-        title: "Khel Khel Mein",
-        genre: "Comedy/Drama",
-        rating: 8.2,
-        votes: "35K Votes",
-        imageUrl: (0, _kkmAvifDefault.default)
-    },
-    {
-        title: "Stree 2: Sarkate Ka Aatank",
-        genre: "Comedy/Horror",
-        rating: 9,
-        votes: "190.1K Votes",
-        imageUrl: (0, _streeAvifDefault.default)
-    },
-    {
-        title: "Alien: Romulus",
-        genre: "Horror/Sci-Fi/Thriller",
-        rating: 8.3,
-        votes: "1.3K Votes",
-        imageUrl: (0, _alienAvifDefault.default)
-    },
-    {
-        title: "Vedaa",
-        genre: "Action/Drama",
-        rating: 8.1,
-        votes: "33.8K Votes",
-        imageUrl: (0, _vedaAvifDefault.default)
-    },
-    {
-        title: "Harold and the Purple Crayon",
-        genre: "Action/Adventure/Fantasy",
-        rating: 7.3,
-        votes: "628 Votes",
-        imageUrl: (0, _harlodAvifDefault.default)
-    },
-    {
-        title: "Khel Khel Mein",
-        genre: "Comedy/Drama",
-        rating: 8.2,
-        votes: "35K Votes",
-        imageUrl: (0, _kkmAvifDefault.default)
-    },
-    {
-        title: "Stree 2: Sarkate Ka Aatank",
-        genre: "Comedy/Horror",
-        rating: 9,
-        votes: "190.1K Votes",
-        imageUrl: (0, _streeAvifDefault.default)
-    },
-    {
-        title: "Alien: Romulus",
-        genre: "Horror/Sci-Fi/Thriller",
-        rating: 8.3,
-        votes: "1.3K Votes",
-        imageUrl: (0, _alienAvifDefault.default)
-    },
-    {
-        title: "Vedaa",
-        genre: "Action/Drama",
-        rating: 8.1,
-        votes: "33.8K Votes",
-        imageUrl: (0, _vedaAvifDefault.default)
-    },
-    {
-        title: "Harold and the Purple Crayon",
-        genre: "Action/Adventure/Fantasy",
-        rating: 7.3,
-        votes: "628 Votes",
-        imageUrl: (0, _harlodAvifDefault.default)
-    }
-];
-const MovieCard = ({ movie })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-        to: "/info",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "bg-[#171921] rounded-lg shadow-lg overflow-hidden w-[13.80rem] mx-[0.78rem] my-3    h-[31rem]",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: movie.imageUrl,
-                    alt: movie.title,
-                    className: "w-full object-cover "
-                }, void 0, false, {
-                    fileName: "src/components/Cards.js",
-                    lineNumber: 86,
-                    columnNumber: 21
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "p-4",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "font-bold text-lg text-white",
-                            children: movie.title
-                        }, void 0, false, {
-                            fileName: "src/components/Cards.js",
-                            lineNumber: 88,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-gray-400",
-                            children: movie.genre
-                        }, void 0, false, {
-                            fileName: "src/components/Cards.js",
-                            lineNumber: 89,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex items-center text-sm mt-2",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "ml-2 text-gray-600",
-                                children: movie.votes
-                            }, void 0, false, {
-                                fileName: "src/components/Cards.js",
-                                lineNumber: 92,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Cards.js",
-                            lineNumber: 90,
-                            columnNumber: 29
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Cards.js",
-                    lineNumber: 87,
-                    columnNumber: 21
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Cards.js",
-            lineNumber: 84,
-            columnNumber: 17
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Cards.js",
-        lineNumber: 83,
-        columnNumber: 9
-    }, undefined);
-};
-_c = MovieCard;
-const MovieList = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "flex flex-wrap overflow-hidden w-[100vw] p-[2%] pt-2",
-        children: movies.map((movie, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(MovieCard, {
-                movie: movie
-            }, index, false, {
-                fileName: "src/components/Cards.js",
-                lineNumber: 104,
-                columnNumber: 17
-            }, undefined))
-    }, void 0, false, {
-        fileName: "src/components/Cards.js",
-        lineNumber: 102,
-        columnNumber: 9
-    }, undefined);
-};
-_c1 = MovieList;
-exports.default = MovieList;
-var _c, _c1;
-$RefreshReg$(_c, "MovieCard");
-$RefreshReg$(_c1, "MovieList");
-
-  $parcel$ReactRefreshHelpers$1709.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../assets/stree.avif":"5HylO","../assets/veda.avif":"443AJ","../assets/kkm.avif":"f9WnC","../assets/alien.avif":"6uJqB","../assets/harlod.avif":"jPiRt","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5HylO":[function(require,module,exports) {
-module.exports = require("e8e66694cbe31c79").getBundleURL("1G2bZ") + "stree.b74823de.avif" + "?" + Date.now();
-
-},{"e8e66694cbe31c79":"lgJ39"}],"443AJ":[function(require,module,exports) {
-module.exports = require("edb2c56f10905674").getBundleURL("1G2bZ") + "veda.6494f5d8.avif" + "?" + Date.now();
-
-},{"edb2c56f10905674":"lgJ39"}],"f9WnC":[function(require,module,exports) {
-module.exports = require("bbdcdbeb0a81e56f").getBundleURL("1G2bZ") + "kkm.99972bb4.avif" + "?" + Date.now();
-
-},{"bbdcdbeb0a81e56f":"lgJ39"}],"6uJqB":[function(require,module,exports) {
-module.exports = require("870360ec15d6109c").getBundleURL("1G2bZ") + "alien.e2aef41b.avif" + "?" + Date.now();
-
-},{"870360ec15d6109c":"lgJ39"}],"jPiRt":[function(require,module,exports) {
-module.exports = require("71b004c8c57993e4").getBundleURL("1G2bZ") + "harlod.832f2de6.avif" + "?" + Date.now();
-
-},{"71b004c8c57993e4":"lgJ39"}],"7t9SE":[function(require,module,exports) {
+},{"bc2965a07aff4b68":"lgJ39"}],"7t9SE":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$06cc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$06cc.prelude(module);
 
 try {
+// import React, { useState, useEffect } from 'react';
+// import Categories from './Categories';
+// import Shimmer from './Shimmer';
+// const Movies = () => {
+//     const [categories, setCategories] = useState([]);
+//     const location = "Hyderabad";
+//     useEffect(() => {
+//         getCategories();
+//     }, []);
+//     const getCategories = async () => {
+//         const data = await fetch(`https://in.bookmyshow.com/api/seo/v1/footer?url=/${location.toLowerCase()}/movies/pad-gaye-pange/ET00408781`);
+//         const response = await data.json();
+//         const filteredCategories = response?.footer?.links.filter(category =>
+//             category.heading === `Upcoming Movies in ${location}` ||
+//             category.heading === `Movies Now Showing in ${location}`
+//         );
+//         setCategories(filteredCategories);
+//     };
+//     return categories.length === 0 ? (<Shimmer />) : (
+//         <div>
+//             {categories.map((category, index) => (
+//                 <Categories key={index} {...category} location={location} />
+//             ))}
+//         </div>
+//     );
+// }
+// export default Movies;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
@@ -35597,43 +35473,82 @@ var _categories = require("./Categories");
 var _categoriesDefault = parcelHelpers.interopDefault(_categories);
 var _shimmer = require("./Shimmer");
 var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
+var _location = require("./Location");
+var _locationDefault = parcelHelpers.interopDefault(_location);
 var _s = $RefreshSig$();
 const Movies = ()=>{
     _s();
     const [categories, setCategories] = (0, _react.useState)([]);
+    const [location, setLocation] = (0, _react.useState)("Hyderabad");
+    (0, _react.useEffect)(()=>{
+        fetchUserLocation();
+    }, []);
     (0, _react.useEffect)(()=>{
         getCategories();
-    }, []);
-    const location = "bhopal";
-    const getCategories = async ()=>{
-        const data = await fetch(`https://in.bookmyshow.com/api/seo/v1/footer?url=/${location}/movies/pad-gaye-pange/ET00408781`);
-        const response = await data.json();
-        console.log(response);
-        setCategories(response?.footer?.links);
-        console.log(categories);
+    }, [
+        location
+    ]);
+    const fetchUserLocation = ()=>{
+        if (navigator.geolocation) navigator.geolocation.getCurrentPosition(async (position)=>{
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            const city = await getCityFromCoordinates(lat, lon);
+            setLocation(city || "Hyderabad");
+        }, ()=>{
+            setLocation("Hyderabad");
+        });
     };
-    return categories.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
-        fileName: "src/components/Movies.js",
-        lineNumber: 18,
-        columnNumber: 41
-    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: categories.map((category, index)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _categoriesDefault.default), {
-                ...category,
-                location: location
-            }, index, false, {
+    const getCityFromCoordinates = async (lat, lon)=>{
+        const apiKey = "AIzaSyDpFOlZfcgb2BbpsH_5vze4NqlPnpoL4SQ";
+        const response = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lon}&key=${apiKey}`);
+        const data = await response.json();
+        if (data.status === "OK") {
+            const result = data.results.find((res)=>res.types.includes("locality"));
+            return result ? result.address_components[0].long_name : null;
+        }
+        return null;
+    };
+    const getCategories = async ()=>{
+        const data = await fetch(`https://in.bookmyshow.com/api/seo/v1/footer?url=/${location.toLowerCase()}/movies/pad-gaye-pange/ET00408781`);
+        const response = await data.json();
+        const filteredCategories = response?.footer?.links.filter((category)=>category.heading === `Upcoming Movies in ${location}` || category.heading === `Movies Now Showing in ${location}`);
+        setCategories(filteredCategories);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationDefault.default), {
+                setLocation: setLocation
+            }, void 0, false, {
                 fileName: "src/components/Movies.js",
-                lineNumber: 21,
-                columnNumber: 24
-            }, undefined);
-        })
-    }, void 0, false, {
+                lineNumber: 90,
+                columnNumber: 13
+            }, undefined),
+            categories.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+                fileName: "src/components/Movies.js",
+                lineNumber: 92,
+                columnNumber: 17
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _categoriesDefault.default), {
+                        ...category,
+                        location: location
+                    }, index, false, {
+                        fileName: "src/components/Movies.js",
+                        lineNumber: 96,
+                        columnNumber: 25
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/Movies.js",
+                lineNumber: 94,
+                columnNumber: 17
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Movies.js",
-        lineNumber: 19,
+        lineNumber: 89,
         columnNumber: 9
     }, undefined);
 };
-_s(Movies, "+ijgB8ROEl0Dkz53OTIi8GynN6s=");
+_s(Movies, "USGYamo7xiIQHks1dGzKWMK4WUA=");
 _c = Movies;
 exports.default = Movies;
 var _c;
@@ -35644,7 +35559,7 @@ $RefreshReg$(_c, "Movies");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Categories":"giosZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Shimmer":"g6ZGj"}],"giosZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Categories":"giosZ","./Shimmer":"g6ZGj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Location":"iC1pF"}],"giosZ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2338 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35663,7 +35578,7 @@ const Categories = ({ heading, items, location })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-white",
+                className: "text-gray-300 ml-8 mb-1 mt-5 font-semibold text-3xl font-serif",
                 children: heading
             }, void 0, false, {
                 fileName: "src/components/Categories.js",
@@ -35704,7 +35619,7 @@ $RefreshReg$(_c, "Categories");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./MovieCards":"4YIzT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4YIzT":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./MovieCards":"4YIzT"}],"4YIzT":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$2b27 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35717,6 +35632,7 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _constants = require("../utils/constants");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const MovieCards = ({ label, link, location })=>{
     _s();
@@ -35740,64 +35656,70 @@ const MovieCards = ({ label, link, location })=>{
             console.error("Error fetching data:", error);
         }
     };
-    return(// <div className='text-white'>
-    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "bg-[#171921] rounded-lg shadow-lg overflow-hidden w-[13.80rem] mx-[0.78rem] my-3    h-[31rem]",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: movies?.ldSchema?.movieJsonLd?.image,
-                alt: label,
-                className: "w-full object-cover "
-            }, void 0, false, {
-                fileName: "src/components/MovieCards.js",
-                lineNumber: 37,
-                columnNumber: 14
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "p-4",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "font-bold text-lg text-white",
-                        children: label
-                    }, void 0, false, {
-                        fileName: "src/components/MovieCards.js",
-                        lineNumber: 39,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "text-gray-400 ",
-                        children: movies?.ldSchema?.movieJsonLd?.genre.join(" , ")
-                    }, void 0, false, {
-                        fileName: "src/components/MovieCards.js",
-                        lineNumber: 40,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex items-center text-sm mt-2",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                            className: "ml-2 text-gray-600"
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+        to: "/info",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "bg-[#171921] rounded-lg shadow-lg overflow-hidden w-[13.80rem] mx-[0.78rem] my-3    h-[31rem]",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: movies?.ldSchema?.movieJsonLd?.image,
+                    alt: label,
+                    className: "w-full object-cover "
+                }, void 0, false, {
+                    fileName: "src/components/MovieCards.js",
+                    lineNumber: 38,
+                    columnNumber: 18
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "p-4",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "font-bold text-lg text-white",
+                            children: label
                         }, void 0, false, {
                             fileName: "src/components/MovieCards.js",
-                            lineNumber: 43,
+                            lineNumber: 40,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "text-gray-400 ",
+                            children: movies?.ldSchema?.movieJsonLd?.genre.join(" , ")
+                        }, void 0, false, {
+                            fileName: "src/components/MovieCards.js",
+                            lineNumber: 41,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex items-center text-sm mt-2",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                className: "ml-2 text-gray-600"
+                            }, void 0, false, {
+                                fileName: "src/components/MovieCards.js",
+                                lineNumber: 44,
+                                columnNumber: 25
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/MovieCards.js",
+                            lineNumber: 42,
                             columnNumber: 21
                         }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MovieCards.js",
-                        lineNumber: 41,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/MovieCards.js",
-                lineNumber: 38,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/MovieCards.js",
+                    lineNumber: 39,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/MovieCards.js",
+            lineNumber: 36,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/MovieCards.js",
         lineNumber: 35,
         columnNumber: 9
-    }, undefined));
+    }, undefined);
 };
 _s(MovieCards, "DsXWz4eQ6qRZ9Cx7rzTltn/5uKY=");
 _c = MovieCards;
@@ -35810,7 +35732,7 @@ $RefreshReg$(_c, "MovieCards");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}],"hB8jg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hB8jg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FETCH_URL", ()=>FETCH_URL);
@@ -35930,6 +35852,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _streeAvif = require("../assets/stree.avif");
 var _streeAvifDefault = parcelHelpers.interopDefault(_streeAvif);
+var _backgroundVideo = require("./BackgroundVideo");
+var _backgroundVideoDefault = parcelHelpers.interopDefault(_backgroundVideo);
 var _movieShowTimes = require("./MovieShowTimes");
 var _movieShowTimesDefault = parcelHelpers.interopDefault(_movieShowTimes);
 const Info = ()=>{
@@ -35949,22 +35873,22 @@ const Info = ()=>{
                                     className: "rounded-l-lg "
                                 }, void 0, false, {
                                     fileName: "src/components/Info.js",
-                                    lineNumber: 10,
-                                    columnNumber: 11
+                                    lineNumber: 11,
+                                    columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "text-center bg-black text-white py-2 mr-65=3 ",
                                     children: "In cinemas"
                                 }, void 0, false, {
                                     fileName: "src/components/Info.js",
-                                    lineNumber: 15,
-                                    columnNumber: 11
+                                    lineNumber: 16,
+                                    columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Info.js",
-                            lineNumber: 9,
-                            columnNumber: 9
+                            lineNumber: 10,
+                            columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "p-[0.3%] md:w-4/4 flex flex-col",
@@ -35977,22 +35901,22 @@ const Info = ()=>{
                                             children: "Stree 2: Sarkate Ka Aatank"
                                         }, void 0, false, {
                                             fileName: "src/components/Info.js",
-                                            lineNumber: 23,
-                                            columnNumber: 13
+                                            lineNumber: 24,
+                                            columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                             className: "text-gray-300 hover:text-red-500",
                                             children: "Share \u27A5"
                                         }, void 0, false, {
                                             fileName: "src/components/Info.js",
-                                            lineNumber: 24,
-                                            columnNumber: 13
+                                            lineNumber: 25,
+                                            columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Info.js",
-                                    lineNumber: 22,
-                                    columnNumber: 11
+                                    lineNumber: 23,
+                                    columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex items-center mt-2",
@@ -36004,36 +35928,36 @@ const Info = ()=>{
                                                     children: "9/10"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Info.js",
-                                                    lineNumber: 29,
-                                                    columnNumber: 15
+                                                    lineNumber: 30,
+                                                    columnNumber: 17
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     className: "ml-2 text-gray-600",
                                                     children: "(250.8K Votes)"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Info.js",
-                                                    lineNumber: 30,
-                                                    columnNumber: 15
+                                                    lineNumber: 31,
+                                                    columnNumber: 17
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/Info.js",
-                                            lineNumber: 28,
-                                            columnNumber: 13
+                                            lineNumber: 29,
+                                            columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                             className: "ml-4 bg-gray-200 text-black py-1 px-2 rounded hover:bg-gray-300",
                                             children: "Rate now"
                                         }, void 0, false, {
                                             fileName: "src/components/Info.js",
-                                            lineNumber: 32,
-                                            columnNumber: 13
+                                            lineNumber: 33,
+                                            columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Info.js",
-                                    lineNumber: 27,
-                                    columnNumber: 11
+                                    lineNumber: 28,
+                                    columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "flex space-x-2 mt-4",
@@ -36043,38 +35967,38 @@ const Info = ()=>{
                                             children: "2D"
                                         }, void 0, false, {
                                             fileName: "src/components/Info.js",
-                                            lineNumber: 38,
-                                            columnNumber: 13
+                                            lineNumber: 39,
+                                            columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             className: "bg-gray-400 px-2 rounded",
                                             children: "Hindi"
                                         }, void 0, false, {
                                             fileName: "src/components/Info.js",
-                                            lineNumber: 39,
-                                            columnNumber: 13
+                                            lineNumber: 40,
+                                            columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Info.js",
-                                    lineNumber: 37,
-                                    columnNumber: 11
+                                    lineNumber: 38,
+                                    columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "text-gray-600 mt-2",
                                     children: "2h 29m \u2022 Comedy, Horror \u2022 UA \u2022 15 Aug, 2024"
                                 }, void 0, false, {
                                     fileName: "src/components/Info.js",
-                                    lineNumber: 42,
-                                    columnNumber: 11
+                                    lineNumber: 43,
+                                    columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     className: "bg-red-600 text-white py-2 px-6 rounded mt-6 hover:bg-red-700",
                                     children: "Trailer \u25B7"
                                 }, void 0, false, {
                                     fileName: "src/components/Info.js",
-                                    lineNumber: 44,
-                                    columnNumber: 11
+                                    lineNumber: 45,
+                                    columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "mt-8",
@@ -36084,49 +36008,54 @@ const Info = ()=>{
                                             children: "About the movie"
                                         }, void 0, false, {
                                             fileName: "src/components/Info.js",
-                                            lineNumber: 49,
-                                            columnNumber: 13
+                                            lineNumber: 50,
+                                            columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                             className: "text-gray-600 mt-2",
                                             children: "After the events of Stree, the town of Chanderi is being haunted again. This time, women are mysteriously abducted by a terrifying headless entity. Once again, it\u2019s up to Bicky and his friends to save their town and loved ones."
                                         }, void 0, false, {
                                             fileName: "src/components/Info.js",
-                                            lineNumber: 50,
-                                            columnNumber: 13
+                                            lineNumber: 51,
+                                            columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Info.js",
-                                    lineNumber: 48,
-                                    columnNumber: 11
+                                    lineNumber: 49,
+                                    columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Info.js",
-                            lineNumber: 21,
-                            columnNumber: 9
+                            lineNumber: 22,
+                            columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Info.js",
-                    lineNumber: 7,
-                    columnNumber: 7
+                    lineNumber: 8,
+                    columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Info.js",
-                lineNumber: 6,
-                columnNumber: 5
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _backgroundVideoDefault.default), {}, void 0, false, {
+                fileName: "src/components/Info.js",
+                lineNumber: 58,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _movieShowTimesDefault.default), {}, void 0, false, {
                 fileName: "src/components/Info.js",
-                lineNumber: 57,
-                columnNumber: 5
+                lineNumber: 59,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Info.js",
-        lineNumber: 5,
+        lineNumber: 6,
         columnNumber: 5
     }, undefined);
 };
@@ -36140,7 +36069,10 @@ $RefreshReg$(_c, "Info");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../assets/stree.avif":"5HylO","./MovieShowTimes":"dDRiE"}],"dDRiE":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","../assets/stree.avif":"5HylO","./MovieShowTimes":"dDRiE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./BackgroundVideo":"2jOyB"}],"5HylO":[function(require,module,exports) {
+module.exports = require("e8e66694cbe31c79").getBundleURL("1G2bZ") + "stree.b74823de.avif" + "?" + Date.now();
+
+},{"e8e66694cbe31c79":"lgJ39"}],"dDRiE":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3d15 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -36277,6 +36209,49 @@ var _c;
 $RefreshReg$(_c, "MovieShowtimes");
 
   $parcel$ReactRefreshHelpers$3d15.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2jOyB":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1c5d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1c5d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const BackgroundVideo = ()=>{
+    _s();
+    (0, _react.useEffect)(()=>{
+        getCategories();
+    }, []);
+    const location = "hyderabad";
+    const getCategories = async ()=>{
+        const data = await fetch(`https://in.bookmyshow.com/api/seo/v1/footer?url=/${location}/movies/pad-gaye-pange/ET00408781`);
+        const response = await data.json();
+        console.log(response);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "BackgroundVideo"
+    }, void 0, false, {
+        fileName: "src/components/BackgroundVideo.js",
+        lineNumber: 14,
+        columnNumber: 9
+    }, undefined);
+};
+_s(BackgroundVideo, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_c = BackgroundVideo;
+exports.default = BackgroundVideo;
+var _c;
+$RefreshReg$(_c, "BackgroundVideo");
+
+  $parcel$ReactRefreshHelpers$1c5d.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

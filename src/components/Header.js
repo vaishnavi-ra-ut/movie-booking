@@ -13,18 +13,18 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black w-full flex items-center justify-between p-4 -mb-[4%]">
+    <header className="bg-black w-[100vw] flex items-center justify-between px-[2vw] py-[1vh] -mb-[4%]">
       {/* Logo */}
       <Link to="/" className="flex-shrink-0">
         <img
           src={logo}
-          className="h-8 md:h-10 lg:h-12 w-auto"
+          className="h-[8vh] w-[15vw]"
           alt="Logo"
         />
       </Link>
 
       {/* Search Bar */}
-      <div className="flex-grow max-w-xl mx-4">
+      <div className="flex-grow max-w-[50%] mx-4">
         <SearchBar />
       </div>
 
