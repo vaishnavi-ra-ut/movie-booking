@@ -24,7 +24,7 @@ export function ProfileMenu({ isMobile = false }) {
 
   return (
     <div
-      className={`relative ${isOpen ? 'z-50' : ''}`}
+      className="relative z-50"
       ref={menuRef}
     >
       <svg
@@ -42,11 +42,9 @@ export function ProfileMenu({ isMobile = false }) {
 
       {/* Dropdown Menu */}
       <div
-        className={`absolute ${
-          isMobile ? 'right-0' : 'left-0'
-        } mt-4 -ml-[77px] w-28 grid place-items-center bg-gray-950  border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${
-          isOpen ? "opacity-90 scale-100" : "opacity-0 scale-95 pointer-events-none"
-        }`}
+        className={`absolute ${isMobile ? 'right-0' : 'left-0'
+          } mt-4 -ml-[77px] w-28 grid place-items-center bg-gray-950  border rounded-md shadow-lg transform transition-all duration-200 ease-in-out ${isOpen ? "opacity-90 scale-100" : "opacity-0 scale-95 pointer-events-none"
+          }`}
       >
         <a href="#" className="block px-4 py-2 text-gray-400 hover:bg-gray-800">
           Profile

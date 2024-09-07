@@ -19,7 +19,6 @@ const Body = () => {
                         src={slide} />)}</Carousel>
             </div>
             <div>
-                movies
                 <Movies />
             </div>
         </div>

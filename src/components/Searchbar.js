@@ -4,20 +4,14 @@ const SearchBar = () => {
   const [isFocused, setIsFocused] = useState(false);
 
   return (
-    <div className="relative flex items-center">
+    <div className="relative flex items-center z-50">
       <input
         type="text"
         placeholder="Search..."
-        className={`w-full px-4 py-1 bg-gray-950 text-white border border-gray-400 rounded-full focus:outline-none transition-all duration-300 ${
-          isFocused ? 'w-full' : 'w-0'
-        }`}
-        onFocus={() => setIsFocused(true)}
-        onBlur={() => setIsFocused(false)}
+        className="w-full px-4 py-1 bg-gray-950 text-white border border-gray-400 rounded-full focus:outline-none"
       />
       <button
-        className={`absolute right-2 text-white transition-opacity duration-300 ${
-          isFocused ? 'opacity-0' : 'opacity-100'
-        }`}
+        className="absolute right-2 text-white"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

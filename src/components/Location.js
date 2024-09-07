@@ -50,7 +50,7 @@
 //   }, [dropdownRef]);
 
 //   return (
-//     <div className="relative" ref={dropdownRef}>
+//     <div className="relative z-50" ref={dropdownRef}>
 //       <input
 //         type="text"
 //         value={searchTerm}
@@ -60,7 +60,7 @@
 //         className="w-full px-2 h-8 text-white bg-gray-950 border border-gray-400 rounded-full focus:outline-none focus:border-blue-500"
 //       />
 //       {showDropdown && (
-//         <ul className="absolute w-full max-h-40 mt-1 overflow-y-auto text-gray-400 bg-gray-900 opacity-96 border border-gray-300 rounded-xl shadow-lg z-20">
+//         <ul className="absolute w-full max-h-40 mt-1 overflow-y-auto text-gray-400 bg-gray-900 opacity-96 border border-gray-300 rounded-xl shadow-lg ">
 //           {filteredLocations.length > 0 ? (
 //             filteredLocations.map((location, index) => (
 //               <li
@@ -81,29 +81,42 @@
 // };
 
 // export default Location;
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrentLocation, setCities } from "../utils/locationSlice"; // Import Redux actions
 
-const Location = ({ setLocation }) => {
+const Location = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
+  const dispatch = useDispatch();
 
-  const locations = [
-    "Bhopal",
-    "Delhi",
-    "Hyderabad",
-    "Rewa",
-    "Chindwara",
-    "Jaipur",
-    "Nagpur",
-    "San Diego",
-    "Dallas",
-    "San Jose",
-  ];
+  // Fetch cities from Redux store
+  const locations = useSelector((state) => state.location.cities);
+  const currentLocation = useSelector((state) => state.location.currentLocation);
 
-  const filteredLocations = locations.filter((location) =>
-    location.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // Fetch cities using API and store them in Redux
+  const fetchCities = async () => {
+    try {
+      const requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+
+      const response = await fetch("https://countriesnow.space/api/v0.1/countries", requestOptions);
+      const result = await response.json();
+      const cities = result.data.find(country => country.country === 'India')?.cities || [];
+
+      // Dispatch cities to Redux
+      dispatch(setCities(cities));
+    } catch (error) {
+      console.error("Error fetching cities:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchCities();
+  }, []);
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
@@ -116,7 +129,7 @@ const Location = ({ setLocation }) => {
   const handleLocationSelect = (location) => {
     setSearchTerm(location);
     setShowDropdown(false);
-    setLocation(location); // Update the location in the Movies component
+    dispatch(setCurrentLocation(location)); // Update current location in Redux
   };
 
   useEffect(() => {
@@ -131,6 +144,11 @@ const Location = ({ setLocation }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [dropdownRef]);
+
+  // Filter cities based on search
+  const filteredLocations = locations.filter((location) =>
+    location.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -164,5 +182,3 @@ const Location = ({ setLocation }) => {
 };
 
 export default Location;
-
-

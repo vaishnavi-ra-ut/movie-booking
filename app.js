@@ -5,11 +5,16 @@ import Header from "./src/components/Header";
 import Body from "./src/components/Body";
 import Error from "./src/components/Error";
 import Info from "./src/components/Info";
+import store from "./src/utils/store";
+import { Provider } from "react-redux";
 
 const Layout = () => (
   <div className="app">
-    <Header />
-    <Outlet />
+    <Provider store={store}>
+      <Header />
+      <Outlet />
+    </Provider>
+
   </div>
 );
 
