@@ -248,6 +248,40 @@ img, video {
   --tw-contain-style: ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (width >= 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (width >= 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (width >= 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (width >= 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -276,20 +310,8 @@ img, video {
   right: 0;
 }
 
-.right-1 {
-  right: .25rem;
-}
-
 .right-2 {
   right: .5rem;
-}
-
-.top-16 {
-  top: 4rem;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .z-20 {
@@ -326,10 +348,6 @@ img, video {
 .my-3 {
   margin-top: .75rem;
   margin-bottom: .75rem;
-}
-
-.-mb-\[4\%\] {
-  margin-bottom: -4%;
 }
 
 .-ml-\[77px\] {
@@ -460,6 +478,10 @@ img, video {
   height: 8vh;
 }
 
+.h-3 {
+  height: .75rem;
+}
+
 .max-h-40 {
   max-height: 10rem;
 }
@@ -478,10 +500,6 @@ img, video {
 
 .w-7 {
   width: 1.75rem;
-}
-
-.w-8 {
-  width: 2rem;
 }
 
 .w-\[100\%\] {
@@ -504,16 +522,20 @@ img, video {
   width: 200px;
 }
 
-.w-\[50vw\] {
-  width: 50vw;
-}
-
 .w-\[96\%\] {
   width: 96%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-3 {
+  width: .75rem;
+}
+
+.w-\[96vw\] {
+  width: 96vw;
 }
 
 .max-w-\[50\%\] {
@@ -568,10 +590,6 @@ img, video {
   align-items: center;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -602,12 +620,6 @@ img, video {
   --tw-space-x-reverse: 0;
   margin-right: calc(.75rem * var(--tw-space-x-reverse));
   margin-left: calc(.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -998,10 +1010,6 @@ body {
 @media (width >= 1024px) {
   .lg\:flex {
     display: flex;
-  }
-
-  .lg\:hidden {
-    display: none;
   }
 }
 /*# sourceMappingURL=index.3a01df49.css.map */

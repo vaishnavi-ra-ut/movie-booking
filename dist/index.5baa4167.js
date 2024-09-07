@@ -34451,123 +34451,6 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$bfed.prelude(module);
 
 try {
-// import React, { useState } from 'react';
-// import SearchBar from "./Searchbar";
-// import logo from "../assets/logo.png";
-// import { ProfileMenu } from "./Profile";
-// import Location from "./Location";
-// import { Link } from "react-router-dom";
-// const Header = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
-//   return (
-//     <header className="bg-black w-[100vw] flex items-center justify-between px-[2vw] py-[1vh] -mb-[4%] z-10">
-//       {/* Logo */}
-//       <Link to="/" className="flex-shrink-0">
-//         <img
-//           src={logo}
-//           className="h-[8vh] w-[15vw]"
-//           alt="Logo"
-//         />
-//       </Link>
-//       {/* Search Bar */}
-//       <div className="flex-grow max-w-[50%] mx-4">
-//         <SearchBar />
-//       </div>
-//       {/* Hamburger Menu Icon for Smaller Screens */}
-//       <div className="lg:hidden relative">
-//         <button
-//           onClick={toggleMenu}
-//           className="text-white focus:outline-none"
-//           aria-label="Menu"
-//         >
-//           {isMenuOpen ? (
-//             <svg
-//               xmlns="http://www.w3.org/2000/svg"
-//               fill="none"
-//               viewBox="0 0 24 24"
-//               strokeWidth={2}
-//               stroke="currentColor"
-//               className="w-8 h-8"
-//             >
-//               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-//             </svg>
-//           ) : (
-//             <svg
-//               xmlns="http://www.w3.org/2000/svg"
-//               fill="none"
-//               viewBox="0 0 24 24"
-//               strokeWidth={2}
-//               stroke="currentColor"
-//               className="w-8 h-8"
-//             >
-//               <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-//             </svg>
-//           )}
-//         </button>
-//         {/* Mobile Menu */}
-//         {isMenuOpen && (
-//           <div className="absolute top-16 right-1 w-[50vw] bg-black text-white rounded-md shadow-lg z-20">
-//             <div className="p-4 space-y-3">
-//               {/* Location component */}
-//               <Location />
-//               {/* ProfileMenu aligned to the right */}
-//               <div className="flex justify-end mt-2">
-//                 <ProfileMenu isMobile={true} />
-//               </div>
-//             </div>
-//           </div>
-//         )}
-//       </div>
-//       {/* Menu Items for Larger Screens */}
-//       <div className="hidden lg:flex items-center space-x-3">
-//         <Location />
-//         <ProfileMenu />
-//       </div>
-//     </header>
-//   );
-// };
-// export default Header;
-// import React, { useState } from 'react';
-// import SearchBar from "./Searchbar";
-// import logo from "../assets/logo.png";
-// import { ProfileMenu } from "./Profile";
-// import Location from "./Location";
-// import { Link } from "react-router-dom";
-// import Movies from './Movies';
-// export const [selectedLocation, setSelectedLocation] = useState("Bhopal");
-// const Header = () => {
-//   const handleLocationSelect = (location) => {
-//     setSelectedLocation(location);
-//   };
-//   return (
-//     <>
-//       <header className="bg-black w-[100vw] flex items-center justify-between px-[2vw] py-[1vh] -mb-[4%]">
-//         {/* Logo */}
-//         <Link to="/" className="flex-shrink-0">
-//           <img
-//             src={logo}
-//             className="h-[8vh] w-[15vw]"
-//             alt="Logo"
-//           />
-//         </Link>
-//         {/* Search Bar */}
-//         <div className="flex-grow max-w-[50%] mx-4">
-//           <SearchBar />
-//         </div>
-//         {/* Menu Items */}
-//         <div className="hidden lg:flex items-center space-x-3">
-//           {/* Pass handleLocationSelect to update the location */}
-//           <Location onLocationSelect={handleLocationSelect} />
-//           <ProfileMenu />
-//         </div>
-//       </header>
-//     </>
-//   );
-// };
-// export default Header;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
@@ -34599,24 +34482,24 @@ const Header = ()=>{
                     alt: "Logo"
                 }, void 0, false, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 146,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 145,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex-grow max-w-[50%] mx-4",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchbarDefault.default), {}, void 0, false, {
                     fileName: "src/components/Header.js",
-                    lineNumber: 151,
+                    lineNumber: 21,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Header.js",
-                lineNumber: 150,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34624,24 +34507,24 @@ const Header = ()=>{
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationDefault.default), {}, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 156,
+                        lineNumber: 26,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profile.ProfileMenu), {}, void 0, false, {
                         fileName: "src/components/Header.js",
-                        lineNumber: 157,
+                        lineNumber: 27,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Header.js",
-                lineNumber: 155,
+                lineNumber: 25,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Header.js",
-        lineNumber: 143,
+        lineNumber: 13,
         columnNumber: 5
     }, undefined);
 };
@@ -36114,79 +35997,6 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$6828.prelude(module);
 
 try {
-// import React, { useState, useEffect, useRef } from "react";
-// const Location = () => {
-//   const [searchTerm, setSearchTerm] = useState("");
-//   const [showDropdown, setShowDropdown] = useState(false);
-//   const dropdownRef = useRef(null);
-//   const locations = [
-//     "Bhopal",
-//     "Delhi",
-//     "hyderabad",
-//     "rewa",
-//     "chindwara",
-//     "jaipur",
-//     "Nagpur",
-//     "San Diego",
-//     "Dallas",
-//     "San Jose",
-//   ];
-//   const filteredLocations = locations.filter((location) =>
-//     location.toLowerCase().includes(searchTerm.toLowerCase())
-//   );
-//   const handleSearchChange = (e) => {
-//     setSearchTerm(e.target.value);
-//   };
-//   const toggleDropdown = () => {
-//     setShowDropdown(!showDropdown);
-//   };
-//   const handleLocationSelect = (location) => {
-//     setSearchTerm(location);
-//     setShowDropdown(false);
-//   };
-//   // Effect to close the dropdown when clicking outside
-//   useEffect(() => {
-//     const handleClickOutside = (event) => {
-//       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-//         setShowDropdown(false);
-//       }
-//     };
-//     document.addEventListener("mousedown", handleClickOutside);
-//     return () => {
-//       document.removeEventListener("mousedown", handleClickOutside);
-//     };
-//   }, [dropdownRef]);
-//   return (
-//     <div className="relative z-50" ref={dropdownRef}>
-//       <input
-//         type="text"
-//         value={searchTerm}
-//         onChange={handleSearchChange}
-//         onClick={toggleDropdown}
-//         placeholder="Location"
-//         className="w-full px-2 h-8 text-white bg-gray-950 border border-gray-400 rounded-full focus:outline-none focus:border-blue-500"
-//       />
-//       {showDropdown && (
-//         <ul className="absolute w-full max-h-40 mt-1 overflow-y-auto text-gray-400 bg-gray-900 opacity-96 border border-gray-300 rounded-xl shadow-lg ">
-//           {filteredLocations.length > 0 ? (
-//             filteredLocations.map((location, index) => (
-//               <li
-//                 key={index}
-//                 onClick={() => handleLocationSelect(location)}
-//                 className="px-4 py-2 cursor-pointer hover:bg-blue-100"
-//               >
-//                 {location}
-//               </li>
-//             ))
-//           ) : (
-//             <li className="px-4 py-2 text-gray-500">No locations found</li>
-//           )}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// };
-// export default Location;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
@@ -36260,7 +36070,7 @@ const Location = ()=>{
                 className: "w-full px-2 h-8 text-white bg-gray-950 border border-gray-400 rounded-full focus:outline-none focus:border-blue-500"
             }, void 0, false, {
                 fileName: "src/components/Location.js",
-                lineNumber: 155,
+                lineNumber: 72,
                 columnNumber: 7
             }, undefined),
             showDropdown && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -36271,25 +36081,25 @@ const Location = ()=>{
                         children: location
                     }, index, false, {
                         fileName: "src/components/Location.js",
-                        lineNumber: 167,
+                        lineNumber: 84,
                         columnNumber: 15
                     }, undefined)) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                     className: "px-4 py-2 text-gray-500",
                     children: "No locations found"
                 }, void 0, false, {
                     fileName: "src/components/Location.js",
-                    lineNumber: 176,
+                    lineNumber: 93,
                     columnNumber: 13
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Location.js",
-                lineNumber: 164,
+                lineNumber: 81,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Location.js",
-        lineNumber: 154,
+        lineNumber: 71,
         columnNumber: 5
     }, undefined);
 };
@@ -36310,7 +36120,7 @@ $RefreshReg$(_c, "Location");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/locationSlice":"8OVWF"}],"8OVWF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-redux":"62sf7","../utils/locationSlice":"8OVWF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8OVWF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "setCurrentLocation", ()=>setCurrentLocation);
@@ -40316,29 +40126,23 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _carousel = require("./Carousel");
 var _carouselDefault = parcelHelpers.interopDefault(_carousel);
-var _img1Jpg = require("../assets/images/img1.jpg");
-var _img1JpgDefault = parcelHelpers.interopDefault(_img1Jpg);
-var _img2Jpg = require("../assets/images/img2.jpg");
-var _img2JpgDefault = parcelHelpers.interopDefault(_img2Jpg);
-var _img3Jpg = require("../assets/images/img3.jpg");
-var _img3JpgDefault = parcelHelpers.interopDefault(_img3Jpg);
-var _img4Jpg = require("../assets/images/img4.jpg");
-var _img4JpgDefault = parcelHelpers.interopDefault(_img4Jpg);
 var _react = require("react");
 var _movies = require("./Movies");
 var _moviesDefault = parcelHelpers.interopDefault(_movies);
-const slides = [
-    (0, _img1JpgDefault.default),
-    (0, _img2JpgDefault.default),
-    (0, _img3JpgDefault.default),
-    (0, _img4JpgDefault.default)
-];
+var _reactRedux = require("react-redux");
+var _s = $RefreshSig$();
+// const slides = [
+//     Img1, Img2, Img3, Img4,
+// ]
 const Body = ()=>{
+    _s();
+    const slides = (0, _reactRedux.useSelector)((store)=>store.image.images).slice(0, 6);
+    console.log(slides);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body w-[100vw] h-[80vh] -m-2 ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "h-[80vh]",
+                className: "h-[80vh] w-[96vw]",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _carouselDefault.default), {
                     autoSlide: true,
                     autoSlideInterval: 3000,
@@ -40347,37 +40151,42 @@ const Body = ()=>{
                             src: slide
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 18,
+                            lineNumber: 17,
                             columnNumber: 44
                         }, undefined))
                 }, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 17,
+                    lineNumber: 16,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 16,
+                lineNumber: 15,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _moviesDefault.default), {}, void 0, false, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 22,
+                    lineNumber: 21,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 21,
+                lineNumber: 20,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 15,
+        lineNumber: 14,
         columnNumber: 9
     }, undefined);
 };
+_s(Body, "nKHvd/QB6hocKEk0fSJoSYcCyR8=", false, function() {
+    return [
+        (0, _reactRedux.useSelector)
+    ];
+});
 _c = Body;
 exports.default = Body;
 var _c;
@@ -40388,7 +40197,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./Carousel":"eWA0I","../assets/images/img1.jpg":"8PPxH","../assets/images/img2.jpg":"4Hr2y","../assets/images/img3.jpg":"fUvhd","../assets/images/img4.jpg":"f7XRq","react":"21dqq","./Movies":"7t9SE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eWA0I":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./Carousel":"eWA0I","react-redux":"62sf7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","./Movies":"7t9SE"}],"eWA0I":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fec5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40538,82 +40347,13 @@ $RefreshReg$(_c, "Carousel");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8PPxH":[function(require,module,exports) {
-module.exports = require("5c43b7b9673b3625").getBundleURL("1G2bZ") + "img1.38381241.jpg" + "?" + Date.now();
-
-},{"5c43b7b9673b3625":"lgJ39"}],"4Hr2y":[function(require,module,exports) {
-module.exports = require("788ccee41d8604fd").getBundleURL("1G2bZ") + "img2.f53bee19.jpg" + "?" + Date.now();
-
-},{"788ccee41d8604fd":"lgJ39"}],"fUvhd":[function(require,module,exports) {
-module.exports = require("1df3e7736fec72b1").getBundleURL("1G2bZ") + "img3.5a2e49a4.jpg" + "?" + Date.now();
-
-},{"1df3e7736fec72b1":"lgJ39"}],"f7XRq":[function(require,module,exports) {
-module.exports = require("bc2965a07aff4b68").getBundleURL("1G2bZ") + "img4.8420d17f.jpg" + "?" + Date.now();
-
-},{"bc2965a07aff4b68":"lgJ39"}],"7t9SE":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7t9SE":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$06cc = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$06cc.prelude(module);
 
 try {
-// import React, { useState, useEffect } from 'react';
-// import Categories from './Categories';
-// import Shimmer from './Shimmer';
-// const Movies = () => {
-//     const [categories, setCategories] = useState([]);
-//     const location = "Hyderabad";
-//     useEffect(() => {
-//         getCategories();
-//     }, []);
-//     const getCategories = async () => {
-//         const data = await fetch(`https://in.bookmyshow.com/api/seo/v1/footer?url=/${location.toLowerCase()}/movies/pad-gaye-pange/ET00408781`);
-//         const response = await data.json();
-//         const filteredCategories = response?.footer?.links.filter(category =>
-//             category.heading === `Upcoming Movies in ${location}` ||
-//             category.heading === `Movies Now Showing in ${location}`
-//         );
-//         setCategories(filteredCategories);
-//     };
-//     return categories.length === 0 ? (<Shimmer />) : (
-//         <div>
-//             {categories.map((category, index) => (
-//                 <Categories key={index} {...category} location={location} />
-//             ))}
-//         </div>
-//     );
-// }
-// export default Movies;
-// import React, { useState, useEffect } from 'react';
-// import Categories from './Categories';
-// import Shimmer from './Shimmer';
-// const Movies = ({ selectedLocation }) => {
-//     const [categories, setCategories] = useState([]);
-//     useEffect(() => {
-//         getCategories();
-//     }, [selectedLocation]); // Re-fetch data when selectedLocation changes
-//     const getCategories = async () => {
-//         try {
-//             const data = await fetch(`https://in.bookmyshow.com/api/seo/v1/footer?url=/${selectedLocation.toLowerCase()}/movies/pad-gaye-pange/ET00408781`);
-//             const response = await data.json();
-//             const filteredCategories = response?.footer?.links.filter(category =>
-//                 category.heading === `Upcoming Movies in ${selectedLocation}` ||
-//                 category.heading === `Movies Now Showing in ${selectedLocation}`
-//             );
-//             setCategories(filteredCategories);
-//         } catch (error) {
-//             console.error("Failed to fetch movie categories", error);
-//         }
-//     };
-//     return categories.length === 0 ? (<Shimmer />) : (
-//         <div>
-//             {categories.map((category, index) => (
-//                 <Categories key={index} {...category} location={selectedLocation} />
-//             ))}
-//         </div>
-//     );
-// }
-// export default Movies;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
@@ -40647,7 +40387,7 @@ const Movies = ()=>{
     };
     return categories.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/Movies.js",
-        lineNumber: 101,
+        lineNumber: 34,
         columnNumber: 9
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _categoriesDefault.default), {
@@ -40655,12 +40395,12 @@ const Movies = ()=>{
                 location: location
             }, index, false, {
                 fileName: "src/components/Movies.js",
-                lineNumber: 105,
+                lineNumber: 38,
                 columnNumber: 17
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/Movies.js",
-        lineNumber: 103,
+        lineNumber: 36,
         columnNumber: 9
     }, undefined);
 };
@@ -40753,9 +40493,12 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _constants = require("../utils/constants");
 var _reactRouterDom = require("react-router-dom");
+var _reactRedux = require("react-redux");
+var _imageSlice = require("../utils/imageSlice");
 var _s = $RefreshSig$();
 const MovieCards = ({ label, link, location })=>{
     _s();
+    const dispatch = (0, _reactRedux.useDispatch)();
     const [movies, setMovies] = (0, _react.useState)();
     (0, _react.useEffect)(()=>{
         getMovies();
@@ -40772,6 +40515,8 @@ const MovieCards = ({ label, link, location })=>{
             const response = JSON.parse(textResponse);
             console.log(response);
             setMovies(response);
+            const slideImg = response?.pageMetaTags.find((tags)=>tags.keyValue === "twitter:images");
+            dispatch((0, _imageSlice.addImage)(slideImg.value));
         } catch (error) {
             console.error("Error fetching data:", error);
         }
@@ -40787,7 +40532,7 @@ const MovieCards = ({ label, link, location })=>{
                     className: "w-full object-cover "
                 }, void 0, false, {
                     fileName: "src/components/MovieCards.js",
-                    lineNumber: 38,
+                    lineNumber: 43,
                     columnNumber: 18
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40798,7 +40543,7 @@ const MovieCards = ({ label, link, location })=>{
                             children: label
                         }, void 0, false, {
                             fileName: "src/components/MovieCards.js",
-                            lineNumber: 40,
+                            lineNumber: 45,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40806,7 +40551,7 @@ const MovieCards = ({ label, link, location })=>{
                             children: movies?.ldSchema?.movieJsonLd?.genre.join(" , ")
                         }, void 0, false, {
                             fileName: "src/components/MovieCards.js",
-                            lineNumber: 41,
+                            lineNumber: 46,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40815,33 +40560,37 @@ const MovieCards = ({ label, link, location })=>{
                                 className: "ml-2 text-gray-600"
                             }, void 0, false, {
                                 fileName: "src/components/MovieCards.js",
-                                lineNumber: 44,
+                                lineNumber: 49,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/MovieCards.js",
-                            lineNumber: 42,
+                            lineNumber: 47,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/MovieCards.js",
-                    lineNumber: 39,
+                    lineNumber: 44,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/MovieCards.js",
-            lineNumber: 36,
+            lineNumber: 41,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/MovieCards.js",
-        lineNumber: 35,
+        lineNumber: 40,
         columnNumber: 9
     }, undefined);
 };
-_s(MovieCards, "DsXWz4eQ6qRZ9Cx7rzTltn/5uKY=");
+_s(MovieCards, "8RxSnkukKXAB8vyUDtu6JycBReA=", false, function() {
+    return [
+        (0, _reactRedux.useDispatch)
+    ];
+});
 _c = MovieCards;
 exports.default = MovieCards;
 var _c;
@@ -40852,13 +40601,32 @@ $RefreshReg$(_c, "MovieCards");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hB8jg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","react-router-dom":"9xmpe","react-redux":"62sf7","../utils/imageSlice":"dATEY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hB8jg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FETCH_URL", ()=>FETCH_URL);
 const FETCH_URL = "https://in.bookmyshow.com/api/seo/v1/footer?url=/";
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dATEY":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addImage", ()=>addImage);
+var _toolkit = require("@reduxjs/toolkit");
+const imageSlice = (0, _toolkit.createSlice)({
+    name: "image",
+    initialState: {
+        images: []
+    },
+    reducers: {
+        addImage: (state, action)=>{
+            state.images.push(action.payload);
+        }
+    }
+});
+const { addImage } = imageSlice.actions;
+exports.default = imageSlice.reducer;
+
+},{"@reduxjs/toolkit":"fuua8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"g6ZGj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0b04 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41382,13 +41150,16 @@ parcelHelpers.defineInteropFlag(exports);
 var _toolkit = require("@reduxjs/toolkit");
 var _locationSlice = require("./locationSlice"); // Import the reducer from locationSlice.js
 var _locationSliceDefault = parcelHelpers.interopDefault(_locationSlice);
+var _imageSlice = require("./imageSlice");
+var _imageSliceDefault = parcelHelpers.interopDefault(_imageSlice);
 const store = (0, _toolkit.configureStore)({
     reducer: {
-        location: (0, _locationSliceDefault.default)
+        location: (0, _locationSliceDefault.default),
+        image: (0, _imageSliceDefault.default)
     }
 });
 exports.default = store;
 
-},{"@reduxjs/toolkit":"fuua8","./locationSlice":"8OVWF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gpvlO","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
+},{"@reduxjs/toolkit":"fuua8","./locationSlice":"8OVWF","./imageSlice":"dATEY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gpvlO","1xC6H","igcvL"], "igcvL", "parcelRequireeb97")
 
 //# sourceMappingURL=index.5baa4167.js.map

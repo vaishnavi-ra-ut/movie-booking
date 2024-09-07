@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { FETCH_URL } from '../utils/constants';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addImage } from '../utils/imageSlice';
 const MovieCards = ({ label, link, location }) => {
+    const dispatch = useDispatch();
     const [movies, setMovies] = useState();
 
     useEffect(() => {
@@ -25,6 +28,8 @@ const MovieCards = ({ label, link, location }) => {
             const response = JSON.parse(textResponse);
             console.log(response);
             setMovies(response);
+            const slideImg = response?.pageMetaTags.find((tags) => tags.keyValue === 'twitter:images')
+            dispatch(addImage(slideImg.value));
         } catch (error) {
             console.error('Error fetching data:', error);
         }

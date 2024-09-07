@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
 import locationReducer from './locationSlice'; // Import the reducer from locationSlice.js
-
+import imageReducer from './imageSlice';
 const store = configureStore({
     reducer: {
-        location: locationReducer, // Add the location reducer to the store
+        location: locationReducer,
+        image: imageReducer,
     },
 });
 
