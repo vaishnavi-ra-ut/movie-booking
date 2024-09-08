@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
 
 const Carousel = ({ children: slides, autoSlide = false, autoSlideInterval = 4000 }) => {
     const [currSlide, setCurrSlide] = useState(0);

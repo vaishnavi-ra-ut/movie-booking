@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const imageSlice = createSlice({
     name: 'image',
     initialState: {
-        images: []
+        images: [],
     },
     reducers: {
         addImage: (state, action) => {

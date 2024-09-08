@@ -1,1 +1,2 @@
 export const FETCH_URL = "https://in.bookmyshow.com/api/seo/v1/footer?url=/";
+export const USER_AVATAR = "https://imgs.search.brave.com/tk-DHYa8-ceby19GA7OLpLNRA0SMbzPWYGujj7R8QFc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvbmV0/ZmxpeC1wcm9maWxl/LXBpY3R1cmVzLTEw/MDAteC0xMDAwLXFv/OWg4MjEzNHQ5bnYw/ajAuanBn";

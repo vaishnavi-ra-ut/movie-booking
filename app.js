@@ -7,6 +7,7 @@ import Error from "./src/components/Error";
 import Info from "./src/components/Info";
 import store from "./src/utils/store";
 import { Provider } from "react-redux";
+import Login from "./src/components/Login";
 
 const Layout = () => (
   <div className="app">
@@ -32,6 +33,10 @@ const appRouter = createBrowserRouter([
         path: "/info",
         element: <Info />,
       },
+      {
+        path: "/login",
+        element: <Login />
+      }
     ],
   },
 ]);

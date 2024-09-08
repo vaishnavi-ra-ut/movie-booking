@@ -3,6 +3,7 @@ import MovieCards from './MovieCards'
 
 const Categories = ({ heading, items, location }) => {
     console.log(heading)
+    console.log(items)
     return (
         <div>
             <h1 className="text-gray-300 ml-8 mb-1 mt-5 font-semibold text-3xl font-serif">{heading}</h1>

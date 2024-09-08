@@ -1,11 +1,6 @@
 import Carousel from "./Carousel";
-import { useEffect } from "react";
 import Movies from "./Movies";
 import { useSelector } from "react-redux";
-
-// const slides = [
-//     Img1, Img2, Img3, Img4,
-// ]
 
 const Body = () => {
     const slides = useSelector((store) => store.image.images).slice(0, 6);
